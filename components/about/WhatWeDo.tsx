@@ -3,25 +3,25 @@ import Link from "next/link";
 const categories = [
   {
     title: "Marine Surveys",
-    href: "/our-services/pre-purchase-inspection/",
+    href: "/pre-purchase-inspection/",
     description:
       "Independent survey work to assess vessel condition, systems and related documentation within an agreed scope.",
   },
   {
     title: "Marine Inspections",
-    href: "/our-services/marine-safety-inspection-in-australia/",
+    href: "/marine-safety-inspection-in-australia/",
     description:
       "Inspection of safety arrangements, equipment and onboard procedures for operational use.",
   },
   {
     title: "AMSA-Related Services",
-    href: "/our-services/amsa-dcv-marine-surveyor/",
+    href: "/amsa-dcv-marine-surveyor/",
     description:
       "Survey and inspection support connected with domestic commercial vessel and AMSA-related requirements.",
   },
   {
     title: "Flag State Inspections",
-    href: "/our-services/flag-state-inspection/",
+    href: "/flag-state-inspection/",
     description:
       "Inspection of a vessel against the requirements of the administration under which it is registered.",
   },
@@ -33,7 +33,7 @@ const categories = [
   },
   {
     title: "Marine Audits",
-    href: "/our-services/internal-audits-for-ism-isps-and-mlc/",
+    href: "/internal-audits-for-ism-isps-and-mlc/",
     description:
       "Internal audits of ISM, ISPS and MLC management systems used on board and ashore.",
   },

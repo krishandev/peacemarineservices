@@ -25,10 +25,10 @@ export type Service = {
 export const services: Service[] = [
   {
     title: "Marine Safety Inspection",
-    label: "Marine Safety Inspection",
+    label: "Marine Safety Inspection in Australia",
     description:
       "Inspection of vessel safety arrangements, equipment and onboard procedures for operational use.",
-    href: "/our-services/marine-safety-inspection-in-australia/",
+    href: "/marine-safety-inspection-in-australia/",
     icon: "safety-inspection",
     image: "/images/services/marine-safety-inspection.webp",
     imageAlt:
@@ -39,7 +39,7 @@ export const services: Service[] = [
     label: "AMSA DCV Marine Surveyor",
     description:
       "Survey support for domestic commercial vessels against AMSA-related inspection requirements.",
-    href: "/our-services/amsa-dcv-marine-surveyor/",
+    href: "/amsa-dcv-marine-surveyor/",
     icon: "amsa-dcv",
     image: "/images/services/amsa-dcv-marine-surveyor.webp",
     imageAlt:
@@ -50,7 +50,7 @@ export const services: Service[] = [
     label: "Flag State Inspection",
     description:
       "Inspection of a vessel against the requirements of its flag administration.",
-    href: "/our-services/flag-state-inspection/",
+    href: "/flag-state-inspection/",
     icon: "flag-state",
     image: "/images/services/flag-state-inspection.webp",
     imageAlt:
@@ -61,18 +61,18 @@ export const services: Service[] = [
     label: "Class Related Consultant",
     description:
       "Consultancy for class surveys, related findings and supporting technical documentation.",
-    href: "/our-services/class-related-consultant/",
+    href: "/class-related-consultant/",
     icon: "class-consultant",
     image: "/images/services/class-related-consultant.webp",
     imageAlt:
       "Marine engineer inspecting machinery in a commercial ship engine room",
   },
   {
-    title: "Internal Audits for ISM, ISPS & MLC",
-    label: "Internal Audits for ISM, ISPS & MLC",
+    title: "Internal Audits for ISM, ISPS and MLC",
+    label: "Internal Audits for ISM, ISPS and MLC",
     description:
       "Internal audits of ISM, ISPS and MLC management systems used on board and ashore.",
-    href: "/our-services/internal-audits-for-ism-isps-and-mlc/",
+    href: "/internal-audits-for-ism-isps-and-mlc/",
     icon: "internal-audits",
     image: "/images/services/internal-audits-ism-isps-mlc.webp",
     imageAlt:
@@ -83,7 +83,7 @@ export const services: Service[] = [
     label: "Pre-Purchase Inspection",
     description:
       "Independent inspection of a vessel's condition before a purchase decision is made.",
-    href: "/our-services/pre-purchase-inspection/",
+    href: "/pre-purchase-inspection/",
     icon: "pre-purchase",
     image: "/images/services/pre-purchase-inspection.webp",
     imageAlt:
@@ -94,7 +94,7 @@ export const services: Service[] = [
     label: "Pre-AMSA Inspection",
     description:
       "Inspection to identify issues before an AMSA attendance or related survey.",
-    href: "/our-services/pre-amsa-inspection/",
+    href: "/pre-amsa-inspection/",
     icon: "pre-amsa",
     image: "/images/services/pre-amsa-inspection.webp",
     imageAlt:
