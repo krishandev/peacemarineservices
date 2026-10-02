@@ -2,25 +2,41 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #122033;
+  --pms-navy: #071a32;
+  --pms-navy-mid: #0c2d55;
+  --pms-blue: #1611b4;
+  --pms-marine: #1e5fa8;
+  --pms-cyan: #2b8ec9;
+  --pms-ink: #122033;
+  --pms-muted: #5a6b7d;
+  --pms-line: #dce3ea;
+  --pms-wash: #f4f7fa;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-pms-navy: var(--pms-navy);
+  --color-pms-navy-mid: var(--pms-navy-mid);
+  --color-pms-blue: var(--pms-blue);
+  --color-pms-marine: var(--pms-marine);
+  --color-pms-cyan: var(--pms-cyan);
+  --color-pms-ink: var(--pms-ink);
+  --color-pms-muted: var(--pms-muted);
+  --color-pms-line: var(--pms-line);
+  --color-pms-wash: var(--pms-wash);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
+
