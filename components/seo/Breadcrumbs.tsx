@@ -1,6 +1,13 @@
 import Link from "next/link";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import type { PageSeoInput } from "@/lib/seo";
+import type { FAQItem } from "@/data/faqs";
+import type { MarineWorkVideo } from "@/data/videos";
+import type {
+  AreaServedType,
+  SchemaListItem,
+  WebpageType,
+} from "@/lib/schema";
 
 export interface BreadcrumbItem {
   label: string;
@@ -12,11 +19,12 @@ export interface BreadcrumbsProps {
   className?: string;
   seo?: {
     page: PageSeoInput;
-    webpageType?: "WebPage" | "AboutPage" | "ContactPage" | "CollectionPage";
+    webpageType?: WebpageType;
     service?: {
       name: string;
       description: string;
       areaServed?: string;
+      areaServedType?: AreaServedType;
     };
     article?: {
       headline: string;
@@ -26,6 +34,13 @@ export interface BreadcrumbsProps {
       dateModified?: string;
       authorName?: string;
     };
+    itemList?: {
+      name: string;
+      items: SchemaListItem[];
+    };
+    includeLocalBusiness?: boolean;
+    videos?: MarineWorkVideo[];
+    faqs?: FAQItem[];
   };
 }
 
@@ -49,6 +64,10 @@ export default function Breadcrumbs({
           webpageType={seo.webpageType}
           service={seo.service}
           article={seo.article}
+          itemList={seo.itemList}
+          includeLocalBusiness={seo.includeLocalBusiness}
+          videos={seo.videos}
+          faqs={seo.faqs}
         />
       ) : null}
       <nav

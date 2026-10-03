@@ -205,11 +205,12 @@ export default function PrivacyContent() {
                 .
               </p>
               <p>
-                This website does not currently include a separate analytics,
-                advertising or cookie-consent platform. Some pages may include
-                embedded YouTube videos using privacy-enhanced embeds. Playing
-                those videos may involve YouTube or Google technologies outside
-                PMS&apos;s control.
+                This website uses Google Analytics 4 to understand how the
+                public Next.js site is used. It does not currently include an
+                advertising pixel or cookie-consent platform. Some pages may
+                include embedded YouTube videos using privacy-enhanced embeds.
+                Playing those videos may involve YouTube or Google technologies
+                outside PMS&apos;s control.
               </p>
             </div>
           </section>
@@ -349,16 +350,20 @@ export default function PrivacyContent() {
                 service function.
               </p>
               <p>
-                This PMS website does not currently use a dedicated analytics
-                platform, advertising pixel or cookie-consent banner. PMS does
-                not operate a newsletter subscription system on this website.
+                This PMS website uses Google Analytics 4 (measurement ID
+                G-DKZ9H681E2) on the public Next.js frontend. Analytics is not
+                gated behind a cookie-consent banner on this site. PMS does
+                not currently use an advertising pixel and does not operate a
+                newsletter subscription system on this website.
               </p>
               <p>
-                The website may still use limited technical storage or cookies
-                that are necessary for hosting, security or basic page
-                operation. Some pages include embedded YouTube videos. If you
-                play an embedded video, YouTube may collect information
-                according to Google&apos;s own privacy practices.
+                Google Analytics may set cookies or similar storage to measure
+                visits and page views. The website may also use limited
+                technical storage or cookies that are necessary for hosting,
+                security or basic page operation. Some pages include embedded
+                YouTube videos. If you play an embedded video, YouTube may
+                collect information according to Google&apos;s own privacy
+                practices.
               </p>
               <p>
                 You can usually control cookies through your browser settings.

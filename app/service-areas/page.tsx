@@ -1,4 +1,5 @@
 import { pageMetadata, pageSeo } from "@/lib/page-seo";
+import { locations } from "@/data/locations";
 import ServiceAreasFaqSection from "@/components/service-areas/ServiceAreasFaqSection";
 import ServiceAreasHero from "@/components/service-areas/ServiceAreasHero";
 import ServiceAreasIntro from "@/components/service-areas/ServiceAreasIntro";
@@ -25,7 +26,19 @@ export default function ServiceAreasPage() {
             ]}
             seo={{
               page: pageSeo.serviceAreas,
-              webpageType: "CollectionPage"
+              webpageType: "CollectionPage",
+              itemList: {
+                name: "PMS marine surveyor service areas",
+                items: locations
+                  .filter(
+                    (location) =>
+                      location.href !== "/service-areas/western-australia/",
+                  )
+                  .map((location) => ({
+                    name: location.name,
+                    url: location.href,
+                  })),
+              },
             }}
           />
         </div>

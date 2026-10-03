@@ -1,20 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-
-const videos = [
-  { id: "2iU9F3jC8GI" },
-  { id: "-tur51KMbdU" },
-  { id: "Z1dOSPVQeJY" },
-] as const;
+import { useState } from "react";
+import { marineWorkVideos } from "@/data/videos";
 
 export default function MarineWorkVideos() {
   const [activeId, setActiveId] = useState<string | null>(null);
 
   return (
     <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
-      {videos.map((video, index) => {
+      {marineWorkVideos.map((video, index) => {
         const isActive = activeId === video.id;
         const label = `Play PMS marine services video ${index + 1}`;
 

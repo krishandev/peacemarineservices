@@ -23,7 +23,8 @@ export default function ContactPage() {
             ]}
             seo={{
               page: pageSeo.contact,
-              webpageType: "ContactPage"
+              webpageType: "ContactPage",
+              includeLocalBusiness: true,
             }}
           />
         </div>

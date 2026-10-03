@@ -1,4 +1,5 @@
 import { pageMetadata, pageSeo } from "@/lib/page-seo";
+import { services } from "@/data/services";
 import ServicesApproach from "@/components/services/ServicesApproach";
 import ServicesFaqSection from "@/components/services/ServicesFaqSection";
 import ServicesGridSection from "@/components/services/ServicesGridSection";
@@ -25,7 +26,14 @@ export default function OurServicesPage() {
             ]}
             seo={{
               page: pageSeo.services,
-              webpageType: "CollectionPage"
+              webpageType: "CollectionPage",
+              itemList: {
+                name: "PMS marine survey and inspection services",
+                items: services.map((service) => ({
+                  name: service.title,
+                  url: service.href,
+                })),
+              },
             }}
           />
         </div>

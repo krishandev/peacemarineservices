@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 export const SITE_URL = "https://peacemarineservices.com.au";
 export const SITE_NAME = "PMS Peace Marine Services";
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+export const LOCAL_BUSINESS_ID = `${SITE_URL}/#localbusiness`;
 export const LOGO_PATH = "/PMS-4.png";
 export const DEFAULT_OG_IMAGE = "/images/services/pre-psc-inspection.webp";
 export const DEFAULT_OG_IMAGE_ALT =

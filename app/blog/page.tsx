@@ -57,6 +57,16 @@ export default async function BlogPage({
             seo={{
               page: pageSeo.blog,
               webpageType: "CollectionPage",
+              itemList:
+                posts.length > 0
+                  ? {
+                      name: "Latest marine and maritime articles",
+                      items: posts.map((post) => ({
+                        name: post.title,
+                        url: post.path,
+                      })),
+                    }
+                  : undefined,
             }}
           />
         </div>

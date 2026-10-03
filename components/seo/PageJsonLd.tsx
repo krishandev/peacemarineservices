@@ -1,15 +1,15 @@
 import JsonLd from "@/components/seo/JsonLd";
 import type { BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import type { FAQItem } from "@/data/faqs";
+import type { MarineWorkVideo } from "@/data/videos";
 import {
-  getBlogPostingSchema,
-  getBreadcrumbSchema,
-  getServiceSchema,
-  getWebPageSchema,
+  getPageSchemaGraph,
+  type AreaServedType,
+  type SchemaListItem,
+  type WebpageType,
 } from "@/lib/schema";
 
-type WebpageType = "WebPage" | "AboutPage" | "ContactPage" | "CollectionPage";
-
-type PageJsonLdProps = {
+export type PageJsonLdProps = {
   path: string;
   name: string;
   description: string;
@@ -19,6 +19,7 @@ type PageJsonLdProps = {
     name: string;
     description: string;
     areaServed?: string;
+    areaServedType?: AreaServedType;
   };
   article?: {
     headline: string;
@@ -28,48 +29,15 @@ type PageJsonLdProps = {
     dateModified?: string;
     authorName?: string;
   };
+  itemList?: {
+    name: string;
+    items: SchemaListItem[];
+  };
+  includeLocalBusiness?: boolean;
+  videos?: MarineWorkVideo[];
+  faqs?: FAQItem[];
 };
 
-export default function PageJsonLd({
-  path,
-  name,
-  description,
-  breadcrumbs,
-  webpageType = "WebPage",
-  service,
-  article,
-}: PageJsonLdProps) {
-  return (
-    <>
-      <JsonLd
-        data={getWebPageSchema({
-          path,
-          name,
-          description,
-          type: webpageType,
-        })}
-      />
-      {breadcrumbs && breadcrumbs.length > 0 ? (
-        <JsonLd data={getBreadcrumbSchema(breadcrumbs, path)} />
-      ) : null}
-      {service ? (
-        <JsonLd
-          data={getServiceSchema({
-            path,
-            name: service.name,
-            description: service.description,
-            areaServed: service.areaServed,
-          })}
-        />
-      ) : null}
-      {article ? (
-        <JsonLd
-          data={getBlogPostingSchema({
-            path,
-            ...article,
-          })}
-        />
-      ) : null}
-    </>
-  );
+export default function PageJsonLd(props: PageJsonLdProps) {
+  return <JsonLd data={getPageSchemaGraph(props)} />;
 }

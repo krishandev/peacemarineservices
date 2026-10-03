@@ -1,4 +1,5 @@
 import { pageMetadata, pageSeo } from "@/lib/page-seo";
+import { marineWorkVideos } from "@/data/videos";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import AboutSection from "@/components/home/AboutSection";
 import CredentialsSection from "@/components/home/CredentialsSection";
@@ -22,6 +23,8 @@ export default function Home() {
         name={pageSeo.home.title}
         description={pageSeo.home.description}
         webpageType="WebPage"
+        includeLocalBusiness
+        videos={marineWorkVideos}
       />
       <Hero />
       <TrustIntro />

@@ -1,25 +1,30 @@
 import JsonLd from "@/components/seo/JsonLd";
-import { getServiceSchema } from "@/lib/schema";
+import { getServiceSchema, schemaGraph, type AreaServedType } from "@/lib/schema";
 
 export default function ServiceSchema({
   path,
   name,
   description,
   areaServed,
+  areaServedType,
 }: {
   path: string;
   name: string;
   description: string;
   areaServed?: string;
+  areaServedType?: AreaServedType;
 }) {
   return (
     <JsonLd
-      data={getServiceSchema({
-        path,
-        name,
-        description,
-        areaServed,
-      })}
+      data={schemaGraph([
+        getServiceSchema({
+          path,
+          name,
+          description,
+          areaServed,
+          areaServedType,
+        }),
+      ])}
     />
   );
 }

@@ -1,6 +1,6 @@
 import JsonLd from "@/components/seo/JsonLd";
 import type { BreadcrumbItem } from "@/components/seo/Breadcrumbs";
-import { getBreadcrumbSchema } from "@/lib/schema";
+import { getBreadcrumbSchema, schemaGraph } from "@/lib/schema";
 
 export default function BreadcrumbSchema({
   items,
@@ -9,5 +9,7 @@ export default function BreadcrumbSchema({
   items: BreadcrumbItem[];
   currentPath: string;
 }) {
-  return <JsonLd data={getBreadcrumbSchema(items, currentPath)} />;
+  return (
+    <JsonLd data={schemaGraph([getBreadcrumbSchema(items, currentPath)])} />
+  );
 }
