@@ -46,16 +46,6 @@ export default function AboutSection() {
             job depends on the vessel, timing and inspection requirement. PMS
             does not operate a physical office in every listed location.
           </p>
-          <p className="mt-4 text-sm leading-6 text-pms-muted sm:text-[15px]">
-            You can also read marine inspection articles on our{" "}
-            <Link
-              href="/blog/"
-              className="font-semibold text-pms-blue underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
-            >
-              blog
-            </Link>
-            .
-          </p>
           <Link
             href="/about-us/"
             className="mt-6 inline-flex min-h-12 items-center justify-center rounded-sm bg-pms-blue px-5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-pms-navy-mid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"

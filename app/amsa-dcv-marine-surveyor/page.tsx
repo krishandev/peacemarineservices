@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import AmsaDcvFaq from "@/components/amsa-dcv/AmsaDcvFaq";
 import AmsaDcvGallery from "@/components/amsa-dcv/AmsaDcvGallery";
 import AmsaDcvHero from "@/components/amsa-dcv/AmsaDcvHero";
@@ -13,17 +13,8 @@ import AmsaDcvVessels from "@/components/amsa-dcv/AmsaDcvVessels";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "AMSA DCV Marine Surveyor Australia | Domestic Commercial Vessel Surveys | PMS",
-  },
-  description:
-    "PMS Peace Marine Services provides AMSA DCV marine survey and inspection support for domestic commercial vessels across Australia and Western Australia.",
-  alternates: {
-    canonical: "/amsa-dcv-marine-surveyor/",
-  },
-};
+
+export const metadata = pageMetadata.amsaDcv;
 
 export default function AmsaDcvMarineSurveyorPage() {
   return (
@@ -36,6 +27,14 @@ export default function AmsaDcvMarineSurveyorPage() {
               { label: "Our Services", href: "/our-services/" },
               { label: "AMSA DCV Marine Surveyor" },
             ]}
+            seo={{
+              page: pageSeo.amsaDcv,
+              webpageType: "WebPage",
+            service: {
+                name: "AMSA DCV Marine Surveyor Services",
+                description: "Marine surveyor support for domestic commercial vessel operators, including DCV inspection preparation, documentation review and marine inspection services."
+              }
+            }}
           />
         </div>
       </div>

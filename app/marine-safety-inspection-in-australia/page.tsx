@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import MarineSafetyAudience from "@/components/marine-safety/MarineSafetyAudience";
 import MarineSafetyFaq from "@/components/marine-safety/MarineSafetyFaq";
 import MarineSafetyGallery from "@/components/marine-safety/MarineSafetyGallery";
@@ -13,17 +13,8 @@ import MarineSafetyWhy from "@/components/marine-safety/MarineSafetyWhy";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "Marine Safety Inspection Services in Australia | PMS Peace Marine Services",
-  },
-  description:
-    "PMS Peace Marine Services provides marine safety inspection services across Australia, helping vessel owners and operators identify safety, operational and compliance issues.",
-  alternates: {
-    canonical: "/marine-safety-inspection-in-australia/",
-  },
-};
+
+export const metadata = pageMetadata.marineSafety;
 
 export default function MarineSafetyInspectionPage() {
   return (
@@ -36,6 +27,14 @@ export default function MarineSafetyInspectionPage() {
               { label: "Our Services", href: "/our-services/" },
               { label: "Marine Safety Inspection in Australia" },
             ]}
+            seo={{
+              page: pageSeo.marineSafety,
+              webpageType: "WebPage",
+            service: {
+                name: "Marine Safety Inspection Services",
+                description: "Marine safety inspection services in Australia covering vessel condition, safety equipment, emergency preparedness, documentation and inspection readiness."
+              }
+            }}
           />
         </div>
       </div>

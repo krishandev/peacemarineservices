@@ -20,7 +20,7 @@ const comparisons = [
   {
     title: "Technical Inspection",
     text: "Assess technical and machinery-related condition.",
-    href: "/our-services/technical-inspection-and-marine-engineering-consultancy/",
+    href: "/technical-inspection-and-marine-engineering-consultancy/",
   },
   {
     title: "Class Related Consultancy",
@@ -30,7 +30,7 @@ const comparisons = [
   {
     title: "Pre-PSC Inspection",
     text: "Prepare for a potential Port State Control inspection.",
-    href: "/our-services/pre-psc-inspection-in-australia/",
+    href: "/pre-psc-inspection-in-australia/",
   },
 ] as const;
 

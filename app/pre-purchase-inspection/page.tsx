@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import PrePurchaseCompare from "@/components/pre-purchase/PrePurchaseCompare";
 import PrePurchaseCover from "@/components/pre-purchase/PrePurchaseCover";
 import PrePurchaseFaq from "@/components/pre-purchase/PrePurchaseFaq";
@@ -12,37 +12,9 @@ import PrePurchaseWho from "@/components/pre-purchase/PrePurchaseWho";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-const title =
-  "Pre-Purchase Marine Inspection Australia | Vessel Condition Assessment | PMS";
-const description =
-  "Professional pre-purchase vessel inspections and condition assessments in Australia. PMS Peace Marine Services helps buyers understand vessel condition, identify potential issues and assess risks before purchasing a vessel.";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: title,
-  },
-  description,
-  alternates: {
-    canonical: "/pre-purchase-inspection/",
-  },
-  openGraph: {
-    title,
-    description,
-    url: "/pre-purchase-inspection/",
-    type: "website",
-    images: [
-      {
-        url: "/images/services/pre-purchase-inspection.webp",
-        alt: "Surveyor inspecting the deck and fittings of a vessel before purchase",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-  },
-};
+
+export const metadata = pageMetadata.prePurchase;
 
 export default function PrePurchaseInspectionPage() {
   return (
@@ -55,6 +27,14 @@ export default function PrePurchaseInspectionPage() {
               { label: "Our Services", href: "/our-services/" },
               { label: "Pre-Purchase Inspection" },
             ]}
+            seo={{
+              page: pageSeo.prePurchase,
+              webpageType: "WebPage",
+            service: {
+                name: "Pre-Purchase Marine Inspection Services",
+                description: "Pre-purchase marine inspections to help buyers assess vessel condition, systems, documentation and potential technical issues before acquisition."
+              }
+            }}
           />
         </div>
       </div>

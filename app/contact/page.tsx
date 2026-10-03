@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import ContactDetails from "@/components/contact/ContactDetails";
 import ContactDirect from "@/components/contact/ContactDirect";
 import ContactEnquiryForm from "@/components/contact/ContactEnquiryForm";
@@ -8,16 +8,8 @@ import ContactServiceAreas from "@/components/contact/ContactServiceAreas";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Contact PMS Peace Marine Services | Marine Surveyor Australia",
-  },
-  description:
-    "Contact PMS Peace Marine Services for marine surveying, vessel inspections, audits, compliance support and marine consultancy across Western Australia and Australia.",
-  alternates: {
-    canonical: "/contact/",
-  },
-};
+
+export const metadata = pageMetadata.contact;
 
 export default function ContactPage() {
   return (
@@ -29,6 +21,10 @@ export default function ContactPage() {
               { label: "Home", href: "/" },
               { label: "Contact" },
             ]}
+            seo={{
+              page: pageSeo.contact,
+              webpageType: "ContactPage"
+            }}
           />
         </div>
       </div>

@@ -72,7 +72,7 @@ export default function PreAmsaDocs() {
             <p>
               Related technical or class matters can be discussed through{" "}
               <Link
-                href="/our-services/technical-inspection-and-marine-engineering-consultancy/"
+                href="/technical-inspection-and-marine-engineering-consultancy/"
                 className="font-semibold text-pms-blue underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
               >
                 technical inspection and marine engineering consultancy

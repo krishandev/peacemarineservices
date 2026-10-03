@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import FlagStateAudience from "@/components/flag-state/FlagStateAudience";
 import FlagStateCompare from "@/components/flag-state/FlagStateCompare";
 import FlagStateFaq from "@/components/flag-state/FlagStateFaq";
@@ -13,17 +13,8 @@ import FlagStateScope from "@/components/flag-state/FlagStateScope";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "Flag State Inspection Services Australia | PMS Peace Marine Services",
-  },
-  description:
-    "PMS Peace Marine Services provides Flag State inspection and pre-inspection support for vessel owners and operators across Australia, including key ports in Western Australia.",
-  alternates: {
-    canonical: "/flag-state-inspection/",
-  },
-};
+
+export const metadata = pageMetadata.flagState;
 
 export default function FlagStateInspectionPage() {
   return (
@@ -36,6 +27,14 @@ export default function FlagStateInspectionPage() {
               { label: "Our Services", href: "/our-services/" },
               { label: "Flag State Inspection" },
             ]}
+            seo={{
+              page: pageSeo.flagState,
+              webpageType: "WebPage",
+            service: {
+                name: "Flag State Inspection Services",
+                description: "Flag State inspection preparation and marine consultancy support covering vessel condition, safety, documentation and compliance readiness."
+              }
+            }}
           />
         </div>
       </div>

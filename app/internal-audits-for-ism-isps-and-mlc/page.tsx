@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import InternalAuditsFaq from "@/components/internal-audits/InternalAuditsFaq";
 import InternalAuditsGallery from "@/components/internal-audits/InternalAuditsGallery";
 import InternalAuditsHero from "@/components/internal-audits/InternalAuditsHero";
@@ -13,17 +13,8 @@ import InternalAuditsWhy from "@/components/internal-audits/InternalAuditsWhy";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "ISM, ISPS & MLC Internal Audits Australia | PMS Peace Marine Services",
-  },
-  description:
-    "PMS Peace Marine Services provides internal audit support for ISM, ISPS and MLC requirements, helping maritime companies review safety management, security and labour systems.",
-  alternates: {
-    canonical: "/internal-audits-for-ism-isps-and-mlc/",
-  },
-};
+
+export const metadata = pageMetadata.internalAudits;
 
 export default function InternalAuditsPage() {
   return (
@@ -36,6 +27,14 @@ export default function InternalAuditsPage() {
               { label: "Our Services", href: "/our-services/" },
               { label: "Internal Audits for ISM, ISPS and MLC" },
             ]}
+            seo={{
+              page: pageSeo.internalAudits,
+              webpageType: "WebPage",
+            service: {
+                name: "ISM, ISPS and MLC Internal Audit Services",
+                description: "Internal audit services for ISM, ISPS and MLC systems, including audit preparation, evidence review, findings and corrective action support."
+              }
+            }}
           />
         </div>
       </div>

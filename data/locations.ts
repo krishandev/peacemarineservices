@@ -9,7 +9,7 @@ export interface Location {
 export const locations: Location[] = [
   {
     name: "Perth",
-    href: "/service-areas/perth/",
+    href: "/accredited-amsa-marine-surveyor-in-perth/",
     description:
       "Marine surveying and vessel inspection support for maritime operators and vessel-related work connected with the Perth area.",
     image: "/images/services/pre-psc-inspection.webp",
@@ -17,7 +17,7 @@ export const locations: Location[] = [
   },
   {
     name: "Fremantle",
-    href: "/service-areas/fremantle/",
+    href: "/accredited-amsa-marine-surveyor-in-fremantle/",
     description:
       "Marine surveying and vessel inspection support for maritime operations in and around Fremantle.",
     image: "/images/services/cargo-surveyor.webp",
@@ -25,7 +25,7 @@ export const locations: Location[] = [
   },
   {
     name: "Kwinana",
-    href: "/service-areas/kwinana/",
+    href: "/accredited-amsa-marine-surveyor-in-kwinana/",
     description:
       "Inspection and survey support for vessels and operators using Kwinana and nearby industrial marine facilities.",
     image: "/images/services/bunker-surveyor.webp",
@@ -33,7 +33,7 @@ export const locations: Location[] = [
   },
   {
     name: "Bunbury",
-    href: "/service-areas/bunbury/",
+    href: "/accredited-amsa-maritime-surveyor-in-bunbury/",
     description:
       "Marine survey and inspection support for vessels calling at Bunbury and related South West maritime operations.",
     image: "/images/services/amsa-dcv-marine-surveyor.webp",
@@ -41,7 +41,7 @@ export const locations: Location[] = [
   },
   {
     name: "Albany",
-    href: "/service-areas/albany/",
+    href: "/accredited-amsa-maritime-surveyor-in-albany/",
     description:
       "Vessel inspection and marine survey support for ships and operators connected with Albany.",
     image: "/images/services/flag-state-inspection.webp",
@@ -49,7 +49,7 @@ export const locations: Location[] = [
   },
   {
     name: "Esperance",
-    href: "/service-areas/esperance/",
+    href: "/accredited-amsa-marine-surveyor-in-esperance/",
     description:
       "Marine surveying and inspection support for vessels and operators using Esperance.",
     image: "/images/services/marine-safety-inspection.webp",
@@ -57,7 +57,7 @@ export const locations: Location[] = [
   },
   {
     name: "Geraldton",
-    href: "/service-areas/geraldton/",
+    href: "/accredited-amsa-maritime-surveyor-in-geraldton/",
     description:
       "Inspection, survey and related marine support for vessels operating through Geraldton.",
     image: "/images/services/pre-purchase-inspection.webp",
@@ -65,7 +65,7 @@ export const locations: Location[] = [
   },
   {
     name: "Port Hedland",
-    href: "/service-areas/port-hedland/",
+    href: "/accredited-amsa-maritime-surveyor-in-port-hedland/",
     description:
       "Marine inspection and survey support for vessels and operators connected with Port Hedland.",
     image: "/images/services/pre-amsa-inspection.webp",
@@ -73,7 +73,7 @@ export const locations: Location[] = [
   },
   {
     name: "Dampier",
-    href: "/service-areas/dampier/",
+    href: "/accredited-amsa-maritime-surveyor-in-dampier/",
     description:
       "Vessel inspection and surveying support for marine operations in the Dampier area.",
     image: "/images/services/technical-inspection-marine-engineering.webp",
@@ -81,7 +81,7 @@ export const locations: Location[] = [
   },
   {
     name: "Karratha",
-    href: "/service-areas/karratha/",
+    href: "/accredited-amsa-maritime-surveyor-in-karratha/",
     description:
       "Marine surveying and inspection support for maritime stakeholders connected with Karratha.",
     image: "/images/services/safety-vetting-inspection.webp",
@@ -89,7 +89,7 @@ export const locations: Location[] = [
   },
   {
     name: "Pilbara",
-    href: "/service-areas/pilbara/",
+    href: "/accredited-amsa-maritime-surveyor-in-pilbara/",
     description:
       "Marine surveying, inspection and related support across Pilbara port and marine locations.",
     image: "/images/services/class-related-consultant.webp",

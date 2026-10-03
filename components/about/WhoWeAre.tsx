@@ -58,13 +58,6 @@ export default function WhoWeAre() {
             >
               frequently asked questions
             </Link>
-            , or read articles on our{" "}
-            <Link
-              href="/blog/"
-              className="font-semibold text-pms-blue underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
-            >
-              blog
-            </Link>
             .
           </p>
         </div>

@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
+import PageJsonLd from "@/components/seo/PageJsonLd";
 import AboutSection from "@/components/home/AboutSection";
 import CredentialsSection from "@/components/home/CredentialsSection";
 import FAQSection from "@/components/home/FAQSection";
@@ -10,21 +11,18 @@ import ServicesSection from "@/components/home/ServicesSection";
 import TrustIntro from "@/components/home/TrustIntro";
 import CTA from "@/components/common/CTA";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "AMSA Marine Surveyor Australia | Marine Inspector & Auditor | PMS",
-  },
-  description:
-    "PMS Peace Marine Services provides marine surveying, vessel inspection, auditing and consultancy services across Western Australia, including AMSA-related survey support.",
-  alternates: {
-    canonical: "/",
-  },
-};
+
+export const metadata = pageMetadata.home;
 
 export default function Home() {
   return (
     <main id="main-content">
+      <PageJsonLd
+        path={pageSeo.home.path}
+        name={pageSeo.home.title}
+        description={pageSeo.home.description}
+        webpageType="WebPage"
+      />
       <Hero />
       <TrustIntro />
       <ServicesSection />

@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import {
   PHONE_DISPLAY,
   PHONE_HREF,
@@ -92,7 +93,7 @@ export default function DesktopNavigation({
                   onMouseLeave={onClose}
                 >
                   <div className="flex items-center">
-                    <a
+                    <Link
                       href={item.href}
                       className={`${linkClass} ${
                         isCurrent(pathname, item.href) ? "text-pms-blue" : ""
@@ -102,7 +103,7 @@ export default function DesktopNavigation({
                       }
                     >
                       {item.label}
-                    </a>
+                    </Link>
                     <button
                       type="button"
                       className="inline-flex h-8 w-7 items-center justify-center rounded-sm text-pms-navy transition-colors duration-150 hover:text-pms-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
@@ -133,7 +134,7 @@ export default function DesktopNavigation({
 
             return (
               <li key={item.href}>
-                <a
+                <Link
                   href={item.href}
                   className={`${linkClass} ${
                     isCurrent(pathname, item.href) ? "text-pms-blue" : ""
@@ -143,7 +144,7 @@ export default function DesktopNavigation({
                   }
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             );
           })}
@@ -159,12 +160,12 @@ export default function DesktopNavigation({
           <PhoneIcon className="h-4 w-4" />
           Call Now
         </a>
-        <a
+        <Link
           href="/contact/"
           className="inline-flex h-10 items-center whitespace-nowrap rounded-sm bg-pms-blue px-4 text-sm font-semibold text-white transition-colors duration-150 hover:bg-pms-navy-mid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
         >
           Request an Inspection
-        </a>
+        </Link>
       </div>
     </div>
   );

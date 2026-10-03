@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import ServicesApproach from "@/components/services/ServicesApproach";
 import ServicesFaqSection from "@/components/services/ServicesFaqSection";
 import ServicesGridSection from "@/components/services/ServicesGridSection";
@@ -10,17 +10,8 @@ import ServicesSupport from "@/components/services/ServicesSupport";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "Our Services | Marine Surveyor & Inspection Services Australia | PMS",
-  },
-  description:
-    "Explore marine surveying, vessel inspection, marine audits, compliance support, cargo surveying, bunker surveying and technical marine services from PMS Peace Marine Services across Australia.",
-  alternates: {
-    canonical: "/our-services/",
-  },
-};
+
+export const metadata = pageMetadata.services;
 
 export default function OurServicesPage() {
   return (
@@ -32,6 +23,10 @@ export default function OurServicesPage() {
               { label: "Home", href: "/" },
               { label: "Our Services" },
             ]}
+            seo={{
+              page: pageSeo.services,
+              webpageType: "CollectionPage"
+            }}
           />
         </div>
       </div>

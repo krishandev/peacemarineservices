@@ -33,17 +33,17 @@ export const services = serviceEntries.map((service) => ({
 }));
 
 export const serviceAreas = [
-  { href: "/service-areas/perth/", label: "Perth" },
-  { href: "/service-areas/fremantle/", label: "Fremantle" },
-  { href: "/service-areas/kwinana/", label: "Kwinana" },
-  { href: "/service-areas/bunbury/", label: "Bunbury" },
-  { href: "/service-areas/albany/", label: "Albany" },
-  { href: "/service-areas/esperance/", label: "Esperance" },
-  { href: "/service-areas/geraldton/", label: "Geraldton" },
-  { href: "/service-areas/port-hedland/", label: "Port Hedland" },
-  { href: "/service-areas/dampier/", label: "Dampier" },
-  { href: "/service-areas/karratha/", label: "Karratha" },
-  { href: "/service-areas/pilbara/", label: "Pilbara" },
+  { href: "/accredited-amsa-marine-surveyor-in-perth/", label: "Marine Surveyor in Perth" },
+  { href: "/accredited-amsa-marine-surveyor-in-fremantle/", label: "Marine Surveyor in Fremantle" },
+  { href: "/accredited-amsa-marine-surveyor-in-kwinana/", label: "Marine Surveyor in Kwinana" },
+  { href: "/accredited-amsa-maritime-surveyor-in-bunbury/", label: "Marine Surveyor in Bunbury" },
+  { href: "/accredited-amsa-maritime-surveyor-in-albany/", label: "Marine Surveyor in Albany" },
+  { href: "/accredited-amsa-marine-surveyor-in-esperance/", label: "Marine Surveyor in Esperance" },
+  { href: "/accredited-amsa-maritime-surveyor-in-geraldton/", label: "Marine Surveyor in Geraldton" },
+  { href: "/accredited-amsa-maritime-surveyor-in-port-hedland/", label: "Marine Surveyor in Port Hedland" },
+  { href: "/accredited-amsa-maritime-surveyor-in-dampier/", label: "Marine Surveyor in Dampier" },
+  { href: "/accredited-amsa-maritime-surveyor-in-karratha/", label: "Marine Surveyor in Karratha" },
+  { href: "/accredited-amsa-maritime-surveyor-in-pilbara/", label: "Marine Surveyor in the Pilbara" },
 ] as const;
 
 export type MenuId = "services" | "areas";

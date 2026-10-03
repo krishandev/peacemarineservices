@@ -17,8 +17,6 @@ const quickLinks = [
   { href: "/service-areas/", label: "Service Areas" },
   { href: "/blog/", label: "Blog" },
   { href: "/faq/", label: "FAQ" },
-  { href: "/gallery/", label: "Gallery" },
-  { href: "/pricing/", label: "Pricing" },
   { href: "/contact/", label: "Contact" },
   { href: "/privacy-policy/", label: "Privacy Policy" },
 ] as const;

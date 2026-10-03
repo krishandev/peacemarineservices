@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import {
   PHONE_DISPLAY,
   PHONE_HREF,
@@ -125,7 +126,7 @@ export default function MobileNavigation({
                   return (
                     <li key={item.href} className="border-b border-pms-line">
                       <div className="flex items-stretch">
-                        <a
+                        <Link
                           href={item.href}
                           className={`flex-1 px-3 py-3 text-[15px] font-medium ${
                             isCurrent(pathname, item.href)
@@ -135,7 +136,7 @@ export default function MobileNavigation({
                           onClick={onClose}
                         >
                           {item.label}
-                        </a>
+                        </Link>
                         <button
                           type="button"
                           className="inline-flex w-12 items-center justify-center text-pms-navy focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-pms-blue"
@@ -153,13 +154,13 @@ export default function MobileNavigation({
                       >
                         {services.map((service) => (
                           <li key={service.href}>
-                            <a
+                            <Link
                               href={service.href}
                               className="block rounded-sm px-3 py-2.5 text-sm text-pms-ink hover:bg-white hover:text-pms-blue focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-pms-blue"
                               onClick={onClose}
                             >
                               {service.label}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -172,7 +173,7 @@ export default function MobileNavigation({
                   return (
                     <li key={item.href} className="border-b border-pms-line">
                       <div className="flex items-stretch">
-                        <a
+                        <Link
                           href={item.href}
                           className={`flex-1 px-3 py-3 text-[15px] font-medium ${
                             isCurrent(pathname, item.href)
@@ -182,7 +183,7 @@ export default function MobileNavigation({
                           onClick={onClose}
                         >
                           {item.label}
-                        </a>
+                        </Link>
                         <button
                           type="button"
                           className="inline-flex w-12 items-center justify-center text-pms-navy focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-pms-blue"
@@ -200,13 +201,13 @@ export default function MobileNavigation({
                       >
                         {serviceAreas.map((area) => (
                           <li key={area.href}>
-                            <a
+                            <Link
                               href={area.href}
                               className="block rounded-sm px-3 py-2.5 text-sm text-pms-ink hover:bg-white hover:text-pms-blue focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-pms-blue"
                               onClick={onClose}
                             >
                               {area.label}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -216,7 +217,7 @@ export default function MobileNavigation({
 
                 return (
                   <li key={item.href} className="border-b border-pms-line">
-                    <a
+                    <Link
                       href={item.href}
                       className={`block px-3 py-3 text-[15px] font-medium focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-pms-blue ${
                         isCurrent(pathname, item.href)
@@ -227,20 +228,20 @@ export default function MobileNavigation({
                       onClick={onClose}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
             </ul>
 
             <div className="flex flex-col gap-2 px-4 py-4">
-              <a
+              <Link
                 href="/contact/"
                 className="inline-flex min-h-11 items-center justify-center rounded-sm bg-pms-blue px-4 text-sm font-semibold text-white transition-colors duration-150 hover:bg-pms-navy-mid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
                 onClick={onClose}
               >
                 Request an Inspection
-              </a>
+              </Link>
               <a
                 href={PHONE_HREF}
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-sm border border-pms-navy bg-white px-4 text-sm font-semibold text-pms-navy transition-colors duration-150 hover:bg-pms-wash focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"

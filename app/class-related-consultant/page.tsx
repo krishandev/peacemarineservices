@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import ClassConsultantAreas from "@/components/class-consultant/ClassConsultantAreas";
 import ClassConsultantFaq from "@/components/class-consultant/ClassConsultantFaq";
 import ClassConsultantGallery from "@/components/class-consultant/ClassConsultantGallery";
@@ -12,17 +12,8 @@ import ClassConsultantWho from "@/components/class-consultant/ClassConsultantWho
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "Class Related Marine Consultant Australia | PMS Peace Marine Services",
-  },
-  description:
-    "PMS Peace Marine Services provides class-related marine consultancy and technical support for vessel owners, operators, managers and charterers across Australia.",
-  alternates: {
-    canonical: "/class-related-consultant/",
-  },
-};
+
+export const metadata = pageMetadata.classConsultant;
 
 export default function ClassRelatedConsultantPage() {
   return (
@@ -35,6 +26,14 @@ export default function ClassRelatedConsultantPage() {
               { label: "Our Services", href: "/our-services/" },
               { label: "Class Related Consultant" },
             ]}
+            seo={{
+              page: pageSeo.classConsultant,
+              webpageType: "WebPage",
+            service: {
+                name: "Class Related Marine Consultancy Services",
+                description: "Class-related marine consultancy covering technical inspections, machinery, repairs, modifications and preparation for classification-related requirements."
+              }
+            }}
           />
         </div>
       </div>

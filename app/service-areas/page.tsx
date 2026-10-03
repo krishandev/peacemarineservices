@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import ServiceAreasFaqSection from "@/components/service-areas/ServiceAreasFaqSection";
 import ServiceAreasHero from "@/components/service-areas/ServiceAreasHero";
 import ServiceAreasIntro from "@/components/service-areas/ServiceAreasIntro";
@@ -10,16 +10,8 @@ import ServiceAreasWhy from "@/components/service-areas/ServiceAreasWhy";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Marine Surveyor Service Areas Western Australia | PMS",
-  },
-  description:
-    "Explore PMS Peace Marine Services coverage across Perth, Fremantle, Kwinana, Bunbury, Albany, Esperance, Geraldton, Port Hedland, Dampier, Karratha and the Pilbara for marine surveying and vessel inspection services.",
-  alternates: {
-    canonical: "/service-areas/",
-  },
-};
+
+export const metadata = pageMetadata.serviceAreas;
 
 export default function ServiceAreasPage() {
   return (
@@ -31,6 +23,10 @@ export default function ServiceAreasPage() {
               { label: "Home", href: "/" },
               { label: "Service Areas" },
             ]}
+            seo={{
+              page: pageSeo.serviceAreas,
+              webpageType: "CollectionPage"
+            }}
           />
         </div>
       </div>

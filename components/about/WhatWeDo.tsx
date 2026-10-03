@@ -27,7 +27,7 @@ const categories = [
   },
   {
     title: "Port State Control Preparation",
-    href: "/our-services/pre-psc-inspection-in-australia/",
+    href: "/pre-psc-inspection-in-australia/",
     description:
       "Inspection to review a vessel's readiness before a port state control attendance.",
   },
@@ -39,19 +39,19 @@ const categories = [
   },
   {
     title: "Safety Vetting",
-    href: "/our-services/safety-vetting-inspector-in-australia/",
+    href: "/safety-vetting-inspector-in-australia/",
     description:
       "Safety vetting inspection of vessels against charterer or operator inspection criteria.",
   },
   {
     title: "Cargo & Bunker Surveys",
-    href: "/our-services/cargo-surveyor/",
+    href: "/cargo-surveyor/",
     description:
       "Cargo survey work covering loading, discharge, condition and quantity, plus bunker quantity measurement where required.",
   },
   {
     title: "Marine Engineering Consultancy",
-    href: "/our-services/technical-inspection-and-marine-engineering-consultancy/",
+    href: "/technical-inspection-and-marine-engineering-consultancy/",
     description:
       "Technical inspection and engineering advice for vessel systems and marine operations.",
   },

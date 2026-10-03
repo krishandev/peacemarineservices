@@ -51,7 +51,7 @@ export default function PreAmsaWho() {
             </Link>
             ,{" "}
             <Link
-              href="/our-services/pre-psc-inspection-in-australia/"
+              href="/pre-psc-inspection-in-australia/"
               className="font-semibold text-pms-blue underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
             >
               pre-PSC inspection

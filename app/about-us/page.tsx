@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import AboutCredentials from "@/components/about/AboutCredentials";
 import AboutHero from "@/components/about/AboutHero";
 import AboutMarineWork from "@/components/about/AboutMarineWork";
@@ -13,16 +13,8 @@ import WhyWorkWithPms from "@/components/about/WhyWorkWithPms";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "About PMS Peace Marine Services | Marine Surveyor Australia",
-  },
-  description:
-    "Learn about PMS Peace Marine Services: marine surveying, vessel inspection, auditing and consultancy for vessel owners, operators and maritime businesses in Western Australia and across Australia.",
-  alternates: {
-    canonical: "/about-us/",
-  },
-};
+
+export const metadata = pageMetadata.about;
 
 export default function AboutUsPage() {
   return (
@@ -34,6 +26,10 @@ export default function AboutUsPage() {
               { label: "Home", href: "/" },
               { label: "About Us" },
             ]}
+            seo={{
+              page: pageSeo.about,
+              webpageType: "AboutPage"
+            }}
           />
         </div>
       </div>

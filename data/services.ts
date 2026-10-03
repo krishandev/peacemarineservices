@@ -105,7 +105,7 @@ export const services: Service[] = [
     label: "Cargo Surveyor",
     description:
       "Cargo survey work covering loading, discharge, condition and quantity where required.",
-    href: "/our-services/cargo-surveyor/",
+    href: "/cargo-surveyor/",
     icon: "cargo-survey",
     image: "/images/services/cargo-surveyor.webp",
     imageAlt:
@@ -116,7 +116,7 @@ export const services: Service[] = [
     label: "Technical Inspection & Marine Engineering Consultancy",
     description:
       "Technical inspection and engineering advice for vessel systems and marine operations.",
-    href: "/our-services/technical-inspection-and-marine-engineering-consultancy/",
+    href: "/technical-inspection-and-marine-engineering-consultancy/",
     icon: "technical-consultancy",
     image: "/images/services/technical-inspection-marine-engineering.webp",
     imageAlt:
@@ -127,7 +127,7 @@ export const services: Service[] = [
     label: "Bunker Surveyor",
     description:
       "Measurement and verification of bunker quantity during delivery or transfer.",
-    href: "/our-services/bunker-surveyor/",
+    href: "/bunker-surveyor/",
     icon: "bunker-survey",
     image: "/images/services/bunker-surveyor.webp",
     imageAlt:
@@ -135,10 +135,10 @@ export const services: Service[] = [
   },
   {
     title: "Pre-PSC Inspection",
-    label: "Pre-PSC Inspection",
+    label: "Pre-PSC Inspection in Australia",
     description:
       "Inspection to review a vessel's readiness before a port state control attendance.",
-    href: "/our-services/pre-psc-inspection-in-australia/",
+    href: "/pre-psc-inspection-in-australia/",
     icon: "pre-psc",
     image: "/images/services/pre-psc-inspection.webp",
     imageAlt:
@@ -146,10 +146,10 @@ export const services: Service[] = [
   },
   {
     title: "Safety Vetting Inspection",
-    label: "Safety Vetting Inspection",
+    label: "Safety Vetting Inspector in Australia",
     description:
       "Safety vetting inspection of vessels against charterer or operator inspection criteria.",
-    href: "/our-services/safety-vetting-inspector-in-australia/",
+    href: "/safety-vetting-inspector-in-australia/",
     icon: "safety-vetting",
     image: "/images/services/safety-vetting-inspection.webp",
     imageAlt:

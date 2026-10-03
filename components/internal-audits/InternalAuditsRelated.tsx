@@ -6,9 +6,9 @@ const relatedHrefs = [
   "/amsa-dcv-marine-surveyor/",
   "/flag-state-inspection/",
   "/pre-amsa-inspection/",
-  "/our-services/pre-psc-inspection-in-australia/",
+  "/pre-psc-inspection-in-australia/",
   "/class-related-consultant/",
-  "/our-services/safety-vetting-inspector-in-australia/",
+  "/safety-vetting-inspector-in-australia/",
 ] as const;
 
 const relatedServices = relatedHrefs

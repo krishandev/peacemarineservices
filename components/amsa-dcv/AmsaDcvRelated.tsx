@@ -5,9 +5,9 @@ const relatedHrefs = [
   "/marine-safety-inspection-in-australia/",
   "/pre-amsa-inspection/",
   "/flag-state-inspection/",
-  "/our-services/pre-psc-inspection-in-australia/",
+  "/pre-psc-inspection-in-australia/",
   "/class-related-consultant/",
-  "/our-services/technical-inspection-and-marine-engineering-consultancy/",
+  "/technical-inspection-and-marine-engineering-consultancy/",
   "/pre-purchase-inspection/",
 ] as const;
 

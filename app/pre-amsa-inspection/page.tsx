@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMetadata, pageSeo } from "@/lib/page-seo";
 import PreAmsaCompare from "@/components/pre-amsa/PreAmsaCompare";
 import PreAmsaCover from "@/components/pre-amsa/PreAmsaCover";
 import PreAmsaDocs from "@/components/pre-amsa/PreAmsaDocs";
@@ -13,37 +13,9 @@ import PreAmsaWho from "@/components/pre-amsa/PreAmsaWho";
 import CTA from "@/components/common/CTA";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
-const title =
-  "Pre-AMSA Inspection Australia | Marine Inspection & Survey Preparation | PMS";
-const description =
-  "Pre-AMSA inspection and vessel preparation services in Australia. PMS Peace Marine Services helps vessel owners and operators identify potential issues before applicable AMSA-related inspections and surveys.";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: title,
-  },
-  description,
-  alternates: {
-    canonical: "/pre-amsa-inspection/",
-  },
-  openGraph: {
-    title,
-    description,
-    url: "/pre-amsa-inspection/",
-    type: "website",
-    images: [
-      {
-        url: "/images/services/pre-amsa-inspection.webp",
-        alt: "Surveyor on a commercial vessel deck reviewing an inspection checklist",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-  },
-};
+
+export const metadata = pageMetadata.preAmsa;
 
 export default function PreAmsaInspectionPage() {
   return (
@@ -56,6 +28,14 @@ export default function PreAmsaInspectionPage() {
               { label: "Our Services", href: "/our-services/" },
               { label: "Pre-AMSA Inspection" },
             ]}
+            seo={{
+              page: pageSeo.preAmsa,
+              webpageType: "WebPage",
+            service: {
+                name: "Pre-AMSA Inspection Services",
+                description: "Pre-AMSA inspection support for vessel operators, covering inspection readiness, documentation, safety systems and potential deficiencies before an official inspection."
+              }
+            }}
           />
         </div>
       </div>
