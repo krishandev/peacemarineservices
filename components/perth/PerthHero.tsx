@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { photos } from "@/data/site-images";
 import Link from "next/link";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
 
@@ -44,12 +45,12 @@ export default function PerthHero() {
         <figure className="w-full min-w-0">
           <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/10 bg-pms-navy-mid">
             <Image
-              src="/images/services/pre-psc-inspection.webp"
-              alt="Commercial cargo ship alongside a port berth during a marine inspection"
+              src={photos.bridgeWide.src}
+              alt={photos.bridgeWide.alt}
               fill
               priority
               sizes="(min-width: 1024px) 36rem, 100vw"
-              className="object-cover"
+              className={photos.bridgeWide.className}
             />
           </div>
         </figure>

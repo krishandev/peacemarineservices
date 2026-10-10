@@ -1,3 +1,5 @@
+import { photos } from "@/data/site-images";
+
 export interface Location {
   name: string;
   href: string;
@@ -12,96 +14,96 @@ export const locations: Location[] = [
     href: "/accredited-amsa-marine-surveyor-in-perth/",
     description:
       "Marine surveying and vessel inspection support for maritime operators and vessel-related work connected with the Perth area.",
-    image: "/images/services/pre-psc-inspection.webp",
-    imageAlt: "Commercial cargo ship alongside a port berth",
+    image: photos.bridgeWide.src,
+    imageAlt: photos.bridgeWide.alt,
   },
   {
     name: "Fremantle",
     href: "/accredited-amsa-marine-surveyor-in-fremantle/",
     description:
       "Marine surveying and vessel inspection support for maritime operations in and around Fremantle.",
-    image: "/images/services/cargo-surveyor.webp",
-    imageAlt: "Shipping containers and a crane during cargo operations at a commercial port",
+    image: photos.containerGantries.src,
+    imageAlt: photos.containerGantries.alt,
   },
   {
     name: "Kwinana",
     href: "/accredited-amsa-marine-surveyor-in-kwinana/",
     description:
       "Inspection and survey support for vessels and operators using Kwinana and nearby industrial marine facilities.",
-    image: "/images/services/bunker-surveyor.webp",
-    imageAlt: "Fuel hose connected during a bunkering operation between vessels at harbour",
+    image: photos.tankerDeckGreen.src,
+    imageAlt: photos.tankerDeckGreen.alt,
   },
   {
     name: "Bunbury",
     href: "/accredited-amsa-maritime-surveyor-in-bunbury/",
     description:
       "Marine survey and inspection support for vessels calling at Bunbury and related South West maritime operations.",
-    image: "/images/services/amsa-dcv-marine-surveyor.webp",
-    imageAlt: "Surveyor inspecting a small commercial workboat at a harbour berth",
+    image: photos.shipAtSea.src,
+    imageAlt: photos.shipAtSea.alt,
   },
   {
     name: "Albany",
     href: "/accredited-amsa-maritime-surveyor-in-albany/",
     description:
       "Vessel inspection and marine survey support for ships and operators connected with Albany.",
-    image: "/images/services/flag-state-inspection.webp",
-    imageAlt: "Inspector reviewing vessel documents beside a commercial ship at a quay",
+    image: photos.bulkDeckCrane.src,
+    imageAlt: photos.bulkDeckCrane.alt,
   },
   {
     name: "Esperance",
     href: "/accredited-amsa-marine-surveyor-in-esperance/",
     description:
       "Marine surveying and inspection support for vessels and operators using Esperance.",
-    image: "/images/services/marine-safety-inspection.webp",
-    imageAlt: "Inspector checking fire hoses and safety equipment in a commercial vessel corridor",
+    image: photos.enclosedLifeboat.src,
+    imageAlt: photos.enclosedLifeboat.alt,
   },
   {
     name: "Geraldton",
     href: "/accredited-amsa-maritime-surveyor-in-geraldton/",
     description:
       "Inspection, survey and related marine support for vessels operating through Geraldton.",
-    image: "/images/services/pre-purchase-inspection.webp",
-    imageAlt: "Surveyor inspecting the deck and fittings of a vessel before purchase",
+    image: photos.cargoLoading.src,
+    imageAlt: photos.cargoLoading.alt,
   },
   {
     name: "Port Hedland",
     href: "/accredited-amsa-maritime-surveyor-in-port-hedland/",
     description:
       "Marine inspection and survey support for vessels and operators connected with Port Hedland.",
-    image: "/images/services/pre-amsa-inspection.webp",
-    imageAlt: "Surveyor on a commercial vessel deck reviewing an inspection checklist",
+    image: photos.bulkLoading.src,
+    imageAlt: photos.bulkLoading.alt,
   },
   {
     name: "Dampier",
     href: "/accredited-amsa-maritime-surveyor-in-dampier/",
     description:
       "Vessel inspection and surveying support for marine operations in the Dampier area.",
-    image: "/images/services/technical-inspection-marine-engineering.webp",
-    imageAlt: "Marine diesel machinery and piping in a commercial ship engine room",
+    image: photos.bulkHatches.src,
+    imageAlt: photos.bulkHatches.alt,
   },
   {
     name: "Karratha",
     href: "/accredited-amsa-maritime-surveyor-in-karratha/",
     description:
       "Marine surveying and inspection support for maritime stakeholders connected with Karratha.",
-    image: "/images/services/safety-vetting-inspection.webp",
-    imageAlt: "Surveyor assessing safety equipment on a tanker deck during a vetting inspection",
+    image: photos.rescueBoat.src,
+    imageAlt: photos.rescueBoat.alt,
   },
   {
     name: "Pilbara",
     href: "/accredited-amsa-maritime-surveyor-in-pilbara/",
     description:
       "Marine surveying, inspection and related support across Pilbara port and marine locations.",
-    image: "/images/services/class-related-consultant.webp",
-    imageAlt: "Marine engineer inspecting machinery in a commercial ship engine room",
+    image: photos.tankerDeckPersonnel.src,
+    imageAlt: photos.tankerDeckPersonnel.alt,
   },
   {
     name: "Western Australia",
     href: "/service-areas/western-australia/",
     description:
       "Statewide marine surveying, inspection, auditing and consultancy support across Western Australia.",
-    image: "/images/services/internal-audits-ism-isps-mlc.webp",
-    imageAlt: "Auditor reviewing vessel documentation and checklists at a desk onboard",
+    image: photos.bridgeEcdis.src,
+    imageAlt: photos.bridgeEcdis.alt,
   },
 ];
 

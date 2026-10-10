@@ -1,3 +1,5 @@
+import { photos, stockPhotos } from "@/data/site-images";
+
 export type ServiceIconName =
   | "safety-inspection"
   | "amsa-dcv"
@@ -30,9 +32,8 @@ export const services: Service[] = [
       "Inspection of vessel safety arrangements, equipment and onboard procedures for operational use.",
     href: "/marine-safety-inspection-in-australia/",
     icon: "safety-inspection",
-    image: "/images/services/marine-safety-inspection.webp",
-    imageAlt:
-      "Inspector checking fire hoses and safety equipment in a commercial vessel corridor",
+    image: photos.rescueBoat.src,
+    imageAlt: photos.rescueBoat.alt,
   },
   {
     title: "AMSA DCV Marine Surveyor",
@@ -41,9 +42,8 @@ export const services: Service[] = [
       "Survey support for domestic commercial vessels against AMSA-related inspection requirements.",
     href: "/amsa-dcv-marine-surveyor/",
     icon: "amsa-dcv",
-    image: "/images/services/amsa-dcv-marine-surveyor.webp",
-    imageAlt:
-      "Surveyor inspecting a small commercial workboat at a harbour berth",
+    image: stockPhotos.dcvWorkboat.src,
+    imageAlt: stockPhotos.dcvWorkboat.alt,
   },
   {
     title: "Flag State Inspection",
@@ -52,9 +52,8 @@ export const services: Service[] = [
       "Inspection of a vessel against the requirements of its flag administration.",
     href: "/flag-state-inspection/",
     icon: "flag-state",
-    image: "/images/services/flag-state-inspection.webp",
-    imageAlt:
-      "Inspector reviewing vessel documents beside a commercial ship at a quay",
+    image: photos.vesselAlongside.src,
+    imageAlt: photos.vesselAlongside.alt,
   },
   {
     title: "Class Related Consultant",
@@ -63,9 +62,8 @@ export const services: Service[] = [
       "Consultancy for class surveys, related findings and supporting technical documentation.",
     href: "/class-related-consultant/",
     icon: "class-consultant",
-    image: "/images/services/class-related-consultant.webp",
-    imageAlt:
-      "Marine engineer inspecting machinery in a commercial ship engine room",
+    image: photos.mooringWinch.src,
+    imageAlt: photos.mooringWinch.alt,
   },
   {
     title: "Internal Audits for ISM, ISPS and MLC",
@@ -74,9 +72,8 @@ export const services: Service[] = [
       "Internal audits of ISM, ISPS and MLC management systems used on board and ashore.",
     href: "/internal-audits-for-ism-isps-and-mlc/",
     icon: "internal-audits",
-    image: "/images/services/internal-audits-ism-isps-mlc.webp",
-    imageAlt:
-      "Auditor reviewing vessel documentation and checklists at a desk onboard",
+    image: photos.bridgeGmdss.src,
+    imageAlt: photos.bridgeGmdss.alt,
   },
   {
     title: "Pre-Purchase Inspection",
@@ -85,9 +82,8 @@ export const services: Service[] = [
       "Independent inspection of a vessel's condition before a purchase decision is made.",
     href: "/pre-purchase-inspection/",
     icon: "pre-purchase",
-    image: "/images/services/pre-purchase-inspection.webp",
-    imageAlt:
-      "Surveyor inspecting the deck and fittings of a vessel before purchase",
+    image: photos.bulkHatches.src,
+    imageAlt: photos.bulkHatches.alt,
   },
   {
     title: "Pre-AMSA Inspection",
@@ -96,9 +92,8 @@ export const services: Service[] = [
       "Inspection to identify issues before an AMSA attendance or related survey.",
     href: "/pre-amsa-inspection/",
     icon: "pre-amsa",
-    image: "/images/services/pre-amsa-inspection.webp",
-    imageAlt:
-      "Surveyor on a commercial vessel deck reviewing an inspection checklist",
+    image: photos.bridgeConsole.src,
+    imageAlt: photos.bridgeConsole.alt,
   },
   {
     title: "Cargo Surveyor",
@@ -107,9 +102,8 @@ export const services: Service[] = [
       "Cargo survey work covering loading, discharge, condition and quantity where required.",
     href: "/cargo-surveyor/",
     icon: "cargo-survey",
-    image: "/images/services/cargo-surveyor.webp",
-    imageAlt:
-      "Shipping containers and a crane during cargo operations at a commercial port",
+    image: photos.containerGantries.src,
+    imageAlt: photos.containerGantries.alt,
   },
   {
     title: "Technical Inspection & Marine Engineering Consultancy",
@@ -118,9 +112,8 @@ export const services: Service[] = [
       "Technical inspection and engineering advice for vessel systems and marine operations.",
     href: "/technical-inspection-and-marine-engineering-consultancy/",
     icon: "technical-consultancy",
-    image: "/images/services/technical-inspection-marine-engineering.webp",
-    imageAlt:
-      "Marine diesel machinery and piping in a commercial ship engine room",
+    image: stockPhotos.engineRoom.src,
+    imageAlt: stockPhotos.engineRoom.alt,
   },
   {
     title: "Bunker Surveyor",
@@ -129,9 +122,8 @@ export const services: Service[] = [
       "Measurement and verification of bunker quantity during delivery or transfer.",
     href: "/bunker-surveyor/",
     icon: "bunker-survey",
-    image: "/images/services/bunker-surveyor.webp",
-    imageAlt:
-      "Fuel hose connected during a bunkering operation between vessels at harbour",
+    image: stockPhotos.bunkerHose.src,
+    imageAlt: stockPhotos.bunkerHose.alt,
   },
   {
     title: "Pre-PSC Inspection",
@@ -140,9 +132,8 @@ export const services: Service[] = [
       "Inspection to review a vessel's readiness before a port state control attendance.",
     href: "/pre-psc-inspection-in-australia/",
     icon: "pre-psc",
-    image: "/images/services/pre-psc-inspection.webp",
-    imageAlt:
-      "Commercial cargo ship alongside a port berth during a vessel inspection",
+    image: photos.heroHarbour.src,
+    imageAlt: photos.heroHarbour.alt,
   },
   {
     title: "Safety Vetting Inspection",
@@ -151,8 +142,7 @@ export const services: Service[] = [
       "Safety vetting inspection of vessels against charterer or operator inspection criteria.",
     href: "/safety-vetting-inspector-in-australia/",
     icon: "safety-vetting",
-    image: "/images/services/safety-vetting-inspection.webp",
-    imageAlt:
-      "Surveyor assessing safety equipment on a tanker deck during a vetting inspection",
+    image: photos.tankerDeckPersonnel.src,
+    imageAlt: photos.tankerDeckPersonnel.alt,
   },
 ];

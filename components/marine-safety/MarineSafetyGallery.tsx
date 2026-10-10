@@ -1,30 +1,13 @@
 import Image from "next/image";
+import { photos } from "@/data/site-images";
 
 const images = [
-  {
-    src: "/images/services/marine-safety-inspection.webp",
-    alt: "Inspector checking fire hoses and safety equipment in a commercial vessel corridor",
-  },
-  {
-    src: "/images/services/pre-amsa-inspection.webp",
-    alt: "Surveyor on a commercial vessel deck reviewing an inspection checklist",
-  },
-  {
-    src: "/images/services/safety-vetting-inspection.webp",
-    alt: "Surveyor assessing safety equipment on a tanker deck during a vetting inspection",
-  },
-  {
-    src: "/images/services/pre-psc-inspection.webp",
-    alt: "Commercial cargo ship alongside a port berth during a vessel inspection",
-  },
-  {
-    src: "/images/services/flag-state-inspection.webp",
-    alt: "Inspector reviewing vessel documents beside a commercial ship at a quay",
-  },
-  {
-    src: "/images/services/pre-purchase-inspection.webp",
-    alt: "Surveyor inspecting the deck and fittings of a vessel",
-  },
+  photos.rescueBoat,
+  photos.enclosedLifeboat,
+  photos.tankerDeckPersonnel,
+  photos.heroHarbour,
+  photos.vesselAlongside,
+  photos.mooringWinch,
 ] as const;
 
 export default function MarineSafetyGallery() {
@@ -54,7 +37,7 @@ export default function MarineSafetyGallery() {
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
+                  className={item.className}
                 />
               </div>
             </li>

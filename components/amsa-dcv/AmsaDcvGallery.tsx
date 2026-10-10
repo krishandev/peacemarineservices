@@ -1,30 +1,13 @@
 import Image from "next/image";
+import { photos, stockPhotos } from "@/data/site-images";
 
 const images = [
-  {
-    src: "/images/services/amsa-dcv-marine-surveyor.webp",
-    alt: "Surveyor inspecting a small commercial workboat at a harbour berth",
-  },
-  {
-    src: "/images/services/pre-amsa-inspection.webp",
-    alt: "Surveyor on a commercial vessel deck reviewing an inspection checklist",
-  },
-  {
-    src: "/images/services/flag-state-inspection.webp",
-    alt: "Inspector reviewing vessel documents beside a commercial ship at a quay",
-  },
-  {
-    src: "/images/services/marine-safety-inspection.webp",
-    alt: "Inspector checking fire hoses and safety equipment in a commercial vessel corridor",
-  },
-  {
-    src: "/images/services/technical-inspection-marine-engineering.webp",
-    alt: "Marine diesel machinery and piping in a commercial ship engine room",
-  },
-  {
-    src: "/images/services/pre-purchase-inspection.webp",
-    alt: "Surveyor inspecting the deck and fittings of a vessel",
-  },
+  stockPhotos.dcvWorkboat,
+  photos.rescueBoat,
+  photos.enclosedLifeboat,
+  photos.vesselAlongside,
+  photos.shipAtSea,
+  photos.bridgeConsole,
 ] as const;
 
 export default function AmsaDcvGallery() {
@@ -55,7 +38,7 @@ export default function AmsaDcvGallery() {
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
+                  className={item.className}
                 />
               </div>
             </li>

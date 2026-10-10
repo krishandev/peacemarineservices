@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { photos } from "@/data/site-images";
 
 export default function WhoWeAre() {
   return (
@@ -11,11 +12,11 @@ export default function WhoWeAre() {
         <figure className="w-full min-w-0 lg:order-last">
           <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-pms-line bg-pms-wash">
             <Image
-              src="/images/services/marine-safety-inspection.webp"
-              alt="Inspector checking fire hoses and safety equipment in a commercial vessel corridor"
+              src={photos.bridgeWide.src}
+              alt={photos.bridgeWide.alt}
               fill
               sizes="(min-width: 1024px) 36rem, 100vw"
-              className="object-cover"
+              className={photos.bridgeWide.className}
             />
           </div>
         </figure>

@@ -1,30 +1,13 @@
 import Image from "next/image";
+import { photos, stockPhotos } from "@/data/site-images";
 
 const images = [
-  {
-    src: "/images/services/class-related-consultant.webp",
-    alt: "Marine engineer inspecting machinery in a commercial ship engine room",
-  },
-  {
-    src: "/images/services/technical-inspection-marine-engineering.webp",
-    alt: "Marine diesel machinery and piping in a commercial ship engine room",
-  },
-  {
-    src: "/images/services/flag-state-inspection.webp",
-    alt: "Inspector reviewing vessel documents beside a commercial ship at a quay",
-  },
-  {
-    src: "/images/services/pre-amsa-inspection.webp",
-    alt: "Surveyor on a commercial vessel deck reviewing an inspection checklist",
-  },
-  {
-    src: "/images/services/internal-audits-ism-isps-mlc.webp",
-    alt: "Auditor reviewing vessel documentation and checklists at a desk onboard",
-  },
-  {
-    src: "/images/services/pre-purchase-inspection.webp",
-    alt: "Surveyor inspecting the deck and fittings of a vessel",
-  },
+  photos.mooringWinch,
+  stockPhotos.engineRoom,
+  photos.tankerDeckGreen,
+  photos.bulkHatches,
+  photos.tankerDeckPersonnel,
+  photos.bridgeWide,
 ] as const;
 
 export default function ClassConsultantGallery() {
@@ -55,7 +38,7 @@ export default function ClassConsultantGallery() {
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
+                  className={item.className}
                 />
               </div>
             </li>

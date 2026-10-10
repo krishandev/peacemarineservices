@@ -63,7 +63,7 @@ function isCurrent(pathname: string, href: string) {
 }
 
 const linkClass =
-  "inline-flex items-center whitespace-nowrap rounded-sm px-2 py-2 text-sm font-medium text-pms-ink transition-colors duration-150 hover:text-pms-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue";
+  "inline-flex items-center whitespace-nowrap rounded-sm px-1 py-2 text-[13px] font-medium text-pms-ink transition-colors duration-150 hover:text-pms-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue xl:px-2 xl:text-sm";
 
 export default function DesktopNavigation({
   openMenu,
@@ -74,9 +74,9 @@ export default function DesktopNavigation({
   const pathname = usePathname();
 
   return (
-    <div className="hidden min-w-0 flex-1 items-center xl:flex">
+    <div className="hidden min-w-0 flex-1 items-center lg:flex">
       <nav className="flex flex-1 justify-center" aria-label="Primary">
-        <ul className="flex items-center gap-1">
+        <ul className="flex items-center gap-0 xl:gap-1">
           {mainNav.map((item) => {
             if ("id" in item && (item.id === "services" || item.id === "areas")) {
               const open = openMenu === item.id;
@@ -106,7 +106,7 @@ export default function DesktopNavigation({
                     </Link>
                     <button
                       type="button"
-                      className="inline-flex h-8 w-7 items-center justify-center rounded-sm text-pms-navy transition-colors duration-150 hover:text-pms-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
+                      className="inline-flex h-8 w-6 items-center justify-center rounded-sm text-pms-navy transition-colors duration-150 hover:text-pms-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue xl:w-7"
                       aria-expanded={open}
                       aria-controls={menuId}
                       aria-label={`${item.label} menu`}
@@ -151,10 +151,10 @@ export default function DesktopNavigation({
         </ul>
       </nav>
 
-      <div className="flex shrink-0 items-center gap-3 pl-4">
+      <div className="flex shrink-0 items-center gap-1.5 pl-1.5 xl:gap-3 xl:pl-4">
         <a
           href={PHONE_HREF}
-          className="inline-flex h-10 items-center gap-1.5 whitespace-nowrap rounded-sm border border-pms-navy px-3.5 text-sm font-semibold text-pms-navy transition-colors duration-150 hover:bg-pms-wash focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
+          className="inline-flex h-9 items-center gap-1.5 whitespace-nowrap rounded-sm border border-pms-navy px-2 text-[13px] font-semibold text-pms-navy transition-colors duration-150 hover:bg-pms-wash focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue xl:h-10 xl:px-3.5 xl:text-sm"
           aria-label={`Call PMS Peace Marine Services on ${PHONE_DISPLAY}`}
         >
           <PhoneIcon className="h-4 w-4" />
@@ -162,7 +162,7 @@ export default function DesktopNavigation({
         </a>
         <Link
           href="/contact/"
-          className="inline-flex h-10 items-center whitespace-nowrap rounded-sm bg-pms-blue px-4 text-sm font-semibold text-white transition-colors duration-150 hover:bg-pms-navy-mid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
+          className="inline-flex h-9 items-center whitespace-nowrap rounded-sm bg-pms-blue px-2.5 text-[13px] font-semibold text-white transition-colors duration-150 hover:bg-pms-navy-mid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue xl:h-10 xl:px-4 xl:text-sm"
         >
           Request an Inspection
         </Link>

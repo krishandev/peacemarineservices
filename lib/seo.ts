@@ -6,9 +6,10 @@ export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const LOCAL_BUSINESS_ID = `${SITE_URL}/#localbusiness`;
 export const LOGO_PATH = "/PMS-4.png";
-export const DEFAULT_OG_IMAGE = "/images/services/pre-psc-inspection.webp";
+export const DEFAULT_OG_IMAGE =
+  "/images/client/optimized/hero-container-ship-harbour.webp";
 export const DEFAULT_OG_IMAGE_ALT =
-  "Commercial cargo ship alongside a port berth";
+  "Containership in harbour seen from a vessel deck, with a lifebuoy and safety gear in the foreground";
 
 export type PageSeoInput = {
   title: string;

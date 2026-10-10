@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { photos } from "@/data/site-images";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
 
 export const HERO_WORK_VIDEO_URL =
@@ -74,15 +75,13 @@ export default function Hero() {
 
           <figure className="w-full min-w-0">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-white/10 bg-pms-navy-mid">
-              {/* Placeholder visual — replace this file with a photograph at the same path (jpg/webp). */}
               <Image
-                src="/images/hero-commercial-vessel-inspection.svg"
-                alt="Commercial vessel at port during marine operations, illustrating inspection and surveying work in Australia"
+                src={photos.heroHarbour.src}
+                alt={photos.heroHarbour.alt}
                 fill
                 priority
                 sizes="(min-width: 1024px) 36rem, 100vw"
-                className="object-cover"
-                unoptimized
+                className={photos.heroHarbour.className}
               />
             </div>
             <figcaption className="mt-3">

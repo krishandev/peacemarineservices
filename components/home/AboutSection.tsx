@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { photos } from "@/data/site-images";
 
 export default function AboutSection() {
   return (
@@ -11,12 +12,11 @@ export default function AboutSection() {
         <figure className="w-full min-w-0">
           <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-pms-line bg-pms-navy">
             <Image
-              src="/images/hero-commercial-vessel-inspection.svg"
-              alt="Stylised view of a commercial vessel at port, representing marine inspection and surveying work"
+              src={photos.vesselAlongside.src}
+              alt={photos.vesselAlongside.alt}
               fill
               sizes="(min-width: 1024px) 36rem, 100vw"
-              className="object-cover"
-              unoptimized
+              className={photos.vesselAlongside.className}
             />
           </div>
         </figure>

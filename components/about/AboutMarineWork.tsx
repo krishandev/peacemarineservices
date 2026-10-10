@@ -1,30 +1,13 @@
 import Image from "next/image";
+import { photos, stockPhotos } from "@/data/site-images";
 
 const images = [
-  {
-    src: "/images/services/amsa-dcv-marine-surveyor.webp",
-    alt: "Surveyor inspecting a small commercial workboat at a harbour berth",
-  },
-  {
-    src: "/images/services/class-related-consultant.webp",
-    alt: "Marine engineer inspecting machinery in a commercial ship engine room",
-  },
-  {
-    src: "/images/services/cargo-surveyor.webp",
-    alt: "Shipping containers and a crane during cargo operations at a commercial port",
-  },
-  {
-    src: "/images/services/bunker-surveyor.webp",
-    alt: "Fuel hose connected during a bunkering operation between vessels at harbour",
-  },
-  {
-    src: "/images/services/pre-amsa-inspection.webp",
-    alt: "Surveyor on a commercial vessel deck reviewing an inspection checklist",
-  },
-  {
-    src: "/images/services/safety-vetting-inspection.webp",
-    alt: "Surveyor assessing safety equipment on a tanker deck during a vetting inspection",
-  },
+  stockPhotos.dcvWorkboat,
+  photos.mooringWinch,
+  photos.containerGantries,
+  photos.tankerDeckGreen,
+  photos.vesselAlongside,
+  photos.tankerDeckPersonnel,
 ] as const;
 
 export default function AboutMarineWork() {
@@ -57,7 +40,7 @@ export default function AboutMarineWork() {
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
+                  className={item.className}
                 />
               </div>
             </li>

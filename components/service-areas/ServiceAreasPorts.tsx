@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { photos } from "@/data/site-images";
 
 export default function ServiceAreasPorts() {
   return (
@@ -35,11 +36,11 @@ export default function ServiceAreasPorts() {
         <figure className="w-full min-w-0">
           <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-pms-line bg-pms-wash">
             <Image
-              src="/images/services/cargo-surveyor.webp"
-              alt="Cargo operations at a commercial port with containers and a crane"
+              src={photos.containerGantries.src}
+              alt={photos.containerGantries.alt}
               fill
               sizes="(min-width: 1024px) 36rem, 100vw"
-              className="object-cover"
+              className={photos.containerGantries.className}
             />
           </div>
         </figure>

@@ -76,9 +76,22 @@ export default function SiteNav({ children }: SiteNavProps) {
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => {
+      if (media.matches) {
+        setMobileOpen(false);
+        setAccordion(null);
+      }
+    };
+
+    media.addEventListener("change", onChange);
+    return () => media.removeEventListener("change", onChange);
+  }, []);
+
   return (
     <div ref={rootRef} className="relative border-b border-pms-line bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 lg:gap-4 lg:px-6 lg:py-2.5">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 lg:gap-2 lg:px-3 lg:py-2.5 xl:gap-4 xl:px-6">
         {children}
         <DesktopNavigation
           openMenu={openMenu}

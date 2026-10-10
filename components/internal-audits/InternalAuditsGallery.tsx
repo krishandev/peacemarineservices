@@ -1,30 +1,13 @@
 import Image from "next/image";
+import { photos } from "@/data/site-images";
 
 const images = [
-  {
-    src: "/images/services/internal-audits-ism-isps-mlc.webp",
-    alt: "Auditor reviewing vessel documentation and checklists at a desk onboard",
-  },
-  {
-    src: "/images/services/flag-state-inspection.webp",
-    alt: "Inspector reviewing vessel documents beside a commercial ship at a quay",
-  },
-  {
-    src: "/images/services/pre-amsa-inspection.webp",
-    alt: "Surveyor on a commercial vessel deck reviewing an inspection checklist",
-  },
-  {
-    src: "/images/services/marine-safety-inspection.webp",
-    alt: "Inspector checking fire hoses and safety equipment in a commercial vessel corridor",
-  },
-  {
-    src: "/images/services/safety-vetting-inspection.webp",
-    alt: "Surveyor assessing safety equipment on a tanker deck during a vetting inspection",
-  },
-  {
-    src: "/images/services/class-related-consultant.webp",
-    alt: "Marine engineer inspecting machinery in a commercial ship engine room",
-  },
+  photos.bridgeGmdss,
+  photos.bridgeEcdis,
+  photos.bridgeConsole,
+  photos.bridgeWide,
+  photos.tankerDeckPersonnel,
+  photos.vesselAlongside,
 ] as const;
 
 export default function InternalAuditsGallery() {
@@ -54,7 +37,7 @@ export default function InternalAuditsGallery() {
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
+                  className={item.className}
                 />
               </div>
             </li>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { photos } from "@/data/site-images";
 import Link from "next/link";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
 
@@ -48,12 +49,12 @@ export default function FlagStateHero() {
         <figure className="w-full min-w-0">
           <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/10 bg-pms-navy-mid">
             <Image
-              src="/images/services/flag-state-inspection.webp"
-              alt="Inspector reviewing vessel documents beside a commercial ship at a quay"
+              src={photos.vesselAlongside.src}
+              alt={photos.vesselAlongside.alt}
               fill
               priority
               sizes="(min-width: 1024px) 36rem, 100vw"
-              className="object-cover"
+              className={photos.vesselAlongside.className}
             />
           </div>
         </figure>

@@ -73,7 +73,7 @@ export default function MobileNavigation({
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center gap-2 xl:hidden">
+    <div className="flex items-center gap-2 lg:hidden">
       <a
         href={PHONE_HREF}
         className="inline-flex h-11 items-center gap-1.5 rounded-sm bg-pms-blue px-3 text-sm font-semibold text-white transition-colors duration-150 hover:bg-pms-navy-mid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
@@ -112,7 +112,7 @@ export default function MobileNavigation({
       </button>
 
       <div
-        className={`absolute inset-x-0 top-full z-50 xl:hidden ${open ? "block" : "hidden"}`}
+        className={`absolute inset-x-0 top-full z-50 lg:hidden ${open ? "block" : "hidden"}`}
       >
         <div
           className="max-h-[calc(100dvh-4.75rem)] overflow-y-auto overscroll-contain border-t border-pms-line bg-white shadow-[0_16px_32px_rgba(7,26,50,0.16)] md:max-h-[calc(100dvh-6.25rem)]"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { photos } from "@/data/site-images";
 import Link from "next/link";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
 
@@ -44,12 +45,12 @@ export default function BunburyHero() {
         <figure className="w-full min-w-0">
           <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/10 bg-pms-navy-mid">
             <Image
-              src="/images/services/amsa-dcv-marine-surveyor.webp"
-              alt="Surveyor inspecting a small commercial workboat at a harbour berth"
+              src={photos.shipAtSea.src}
+              alt={photos.shipAtSea.alt}
               fill
               priority
               sizes="(min-width: 1024px) 36rem, 100vw"
-              className="object-cover"
+              className={photos.shipAtSea.className}
             />
           </div>
         </figure>

@@ -3,6 +3,7 @@ import {
   validateMetadata,
   type PageSeoInput,
 } from "@/lib/seo";
+import { photos, stockPhotos } from "@/data/site-images";
 
 export const pageSeo = {
   home: {
@@ -58,203 +59,184 @@ export const pageSeo = {
     description:
       "Marine safety inspection support covering vessel condition, safety equipment, emergency preparedness, documentation and readiness for Australian operators.",
     path: "/marine-safety-inspection-in-australia/",
-    image: "/images/services/marine-safety-inspection.webp",
-    imageAlt:
-      "Inspector checking fire hoses and safety equipment in a commercial vessel corridor",
+    image: photos.rescueBoat.src,
+    imageAlt: photos.rescueBoat.alt,
   },
   amsaDcv: {
     title: "AMSA DCV Marine Surveyor Services, Australia | PMS",
     description:
       "Marine surveyor support for domestic commercial vessel operators, DCV inspection preparation, documentation review and vessel inspection help in Australia.",
     path: "/amsa-dcv-marine-surveyor/",
-    image: "/images/services/amsa-dcv-marine-surveyor.webp",
-    imageAlt: "Surveyor inspecting a small commercial workboat at a harbour berth",
+    image: stockPhotos.dcvWorkboat.src,
+    imageAlt: stockPhotos.dcvWorkboat.alt,
   },
   flagState: {
     title: "Flag State Inspection Preparation, Australia | PMS",
     description:
       "Flag State inspection preparation and marine consultancy covering vessel condition, safety systems, documentation and readiness for operators in Australia.",
     path: "/flag-state-inspection/",
-    image: "/images/services/flag-state-inspection.webp",
-    imageAlt:
-      "Inspector reviewing vessel documents beside a commercial ship at a quay",
+    image: photos.vesselAlongside.src,
+    imageAlt: photos.vesselAlongside.alt,
   },
   classConsultant: {
     title: "Class Related Marine Consultancy Services | PMS AU",
     description:
       "Class-related marine consultancy covering technical inspections, machinery, repairs and modifications. PMS does not claim classification authorisation.",
     path: "/class-related-consultant/",
-    image: "/images/services/class-related-consultant.webp",
-    imageAlt:
-      "Marine engineer inspecting machinery in a commercial ship engine room",
+    image: photos.mooringWinch.src,
+    imageAlt: photos.mooringWinch.alt,
   },
   internalAudits: {
     title: "ISM, ISPS and MLC Internal Audits | PMS, Australia",
     description:
       "Internal audit support for ISM, ISPS and MLC systems, audit preparation, evidence review, findings and corrective action planning for maritime operators.",
     path: "/internal-audits-for-ism-isps-and-mlc/",
-    image: "/images/services/internal-audits-ism-isps-mlc.webp",
-    imageAlt:
-      "Auditor reviewing vessel documentation and checklists at a desk onboard",
+    image: photos.bridgeGmdss.src,
+    imageAlt: photos.bridgeGmdss.alt,
   },
   prePurchase: {
     title: "Pre-Purchase Marine Inspection Services in Australia",
     description:
       "Pre-purchase marine inspections help buyers assess vessel condition, systems, documentation and technical issues before acquisition, with a written report.",
     path: "/pre-purchase-inspection/",
-    image: "/images/services/pre-purchase-inspection.webp",
-    imageAlt:
-      "Surveyor inspecting the deck and fittings of a vessel before purchase",
+    image: photos.bulkHatches.src,
+    imageAlt: photos.bulkHatches.alt,
   },
   preAmsa: {
     title: "Pre-AMSA Inspection Services for Australian Vessels",
     description:
       "Pre-AMSA inspection support covering inspection readiness, documentation, safety systems and possible deficiencies before an official AMSA inspection.",
     path: "/pre-amsa-inspection/",
-    image: "/images/services/pre-amsa-inspection.webp",
-    imageAlt:
-      "Surveyor on a commercial vessel deck reviewing an inspection checklist",
+    image: photos.bridgeConsole.src,
+    imageAlt: photos.bridgeConsole.alt,
   },
   cargo: {
     title: "Cargo Surveyor Services Australia | Inspection PMS",
     description:
       "Cargo surveyor services covering cargo condition, loading and discharge observations, damage assessment and written survey reporting at Australian ports.",
     path: "/cargo-surveyor/",
-    image: "/images/services/cargo-surveyor.webp",
-    imageAlt:
-      "Shipping containers and a crane during cargo operations at a commercial port",
+    image: photos.containerGantries.src,
+    imageAlt: photos.containerGantries.alt,
   },
   technical: {
     title: "Technical Marine Inspection & Consultancy | PMS AU",
     description:
       "Technical marine inspection consultancy covering machinery, engine-room systems, repairs, modifications and vessel assessments for Australian operators.",
     path: "/technical-inspection-and-marine-engineering-consultancy/",
-    image: "/images/services/technical-inspection-marine-engineering.webp",
-    imageAlt:
-      "Marine diesel machinery and piping in a commercial ship engine room",
+    image: stockPhotos.engineRoom.src,
+    imageAlt: stockPhotos.engineRoom.alt,
   },
   bunker: {
     title: "Bunker Surveyor Services Australia | Quantity | PMS",
     description:
       "Bunker survey services covering quantity measurement, bunker delivery documentation, sampling and discrepancy reporting during Australian fuel operations.",
     path: "/bunker-surveyor/",
-    image: "/images/services/bunker-surveyor.webp",
-    imageAlt:
-      "Fuel hose connected during a bunkering operation between vessels at harbour",
+    image: stockPhotos.bunkerHose.src,
+    imageAlt: stockPhotos.bunkerHose.alt,
   },
   prePsc: {
     title: "Pre-PSC Inspection Preparation Across Australia | PMS",
     description:
       "Pre-PSC inspection support to help operators identify deficiencies in safety, documentation and operational readiness before Port State Control attendance.",
     path: "/pre-psc-inspection-in-australia/",
-    image: "/images/services/pre-psc-inspection.webp",
-    imageAlt: "Commercial cargo ship alongside a port berth",
+    image: photos.heroHarbour.src,
+    imageAlt: photos.heroHarbour.alt,
   },
   safetyVetting: {
     title: "Safety Vetting Inspector Services, Australia | PMS",
     description:
       "Safety vetting and pre-vetting support covering vessel condition, safety equipment, documentation and operational preparedness for commercial vessels.",
     path: "/safety-vetting-inspector-in-australia/",
-    image: "/images/services/safety-vetting-inspection.webp",
-    imageAlt:
-      "Surveyor assessing safety equipment on a tanker deck during a vetting inspection",
+    image: photos.tankerDeckPersonnel.src,
+    imageAlt: photos.tankerDeckPersonnel.alt,
   },
   perth: {
     title: "Marine Surveyor Perth WA | Vessel Inspection | PMS",
     description:
       "Marine surveyor support in Perth covering vessel safety, AMSA and DCV preparation, pre-purchase assessments, cargo, bunker and technical consultancy in WA.",
     path: "/accredited-amsa-marine-surveyor-in-perth/",
-    image: "/images/services/pre-psc-inspection.webp",
-    imageAlt: "Commercial cargo ship alongside a port berth",
+    image: photos.bridgeWide.src,
+    imageAlt: photos.bridgeWide.alt,
   },
   fremantle: {
     title: "Marine Surveyor Fremantle | Cargo & Inspection PMS",
     description:
       "Marine surveyor services in Fremantle covering vessel inspections, cargo and bunker work, technical assessments and compliance preparation for operators.",
     path: "/accredited-amsa-marine-surveyor-in-fremantle/",
-    image: "/images/services/cargo-surveyor.webp",
-    imageAlt:
-      "Shipping containers and a crane during cargo operations at a commercial port",
+    image: photos.containerGantries.src,
+    imageAlt: photos.containerGantries.alt,
   },
   kwinana: {
     title: "Marine Surveyor Kwinana | Technical Inspection PMS",
     description:
       "Marine surveyor services in Kwinana covering port calls, vessel safety, technical inspections, AMSA and DCV preparation and consultancy for operators.",
     path: "/accredited-amsa-marine-surveyor-in-kwinana/",
-    image: "/images/services/bunker-surveyor.webp",
-    imageAlt:
-      "Fuel hose connected during a bunkering operation between vessels at harbour",
+    image: photos.tankerDeckGreen.src,
+    imageAlt: photos.tankerDeckGreen.alt,
   },
   bunbury: {
     title: "Marine Surveyor Bunbury | DCV Vessel Inspection PMS",
     description:
       "Marine surveyor services in Bunbury covering DCV support, vessel inspections, technical assessments and consultancy for South West WA marine operators.",
     path: "/accredited-amsa-maritime-surveyor-in-bunbury/",
-    image: "/images/services/amsa-dcv-marine-surveyor.webp",
-    imageAlt: "Surveyor inspecting a small commercial workboat at a harbour berth",
+    image: photos.shipAtSea.src,
+    imageAlt: photos.shipAtSea.alt,
   },
   portHedland: {
     title: "Marine Surveyor Port Hedland | Vessel Inspection PMS",
     description:
       "Marine surveyor support in Port Hedland covering port calls, vessel safety, cargo, bunker work, technical assessments and DCV preparation in the Pilbara.",
     path: "/accredited-amsa-maritime-surveyor-in-port-hedland/",
-    image: "/images/services/pre-amsa-inspection.webp",
-    imageAlt:
-      "Surveyor on a commercial vessel deck reviewing an inspection checklist",
+    image: photos.bulkLoading.src,
+    imageAlt: photos.bulkLoading.alt,
   },
   dampier: {
     title: "Marine Surveyor Dampier | Cargo & Bunker Survey PMS",
     description:
       "Marine surveyor services in Dampier covering vessel safety, AMSA and DCV preparation, cargo and bunker work, and technical support for Pilbara operations.",
     path: "/accredited-amsa-maritime-surveyor-in-dampier/",
-    image: "/images/services/technical-inspection-marine-engineering.webp",
-    imageAlt:
-      "Marine diesel machinery and piping in a commercial ship engine room",
+    image: photos.bulkHatches.src,
+    imageAlt: photos.bulkHatches.alt,
   },
   albany: {
     title: "Marine Surveyor Albany | Pre-Purchase Inspection PMS",
     description:
       "Marine surveyor services in Albany covering vessel safety, pre-purchase assessments, cargo and bunker work, and technical support on WA's south coast.",
     path: "/accredited-amsa-maritime-surveyor-in-albany/",
-    image: "/images/services/flag-state-inspection.webp",
-    imageAlt:
-      "Inspector reviewing vessel documents beside a commercial ship at a quay",
+    image: photos.bulkDeckCrane.src,
+    imageAlt: photos.bulkDeckCrane.alt,
   },
   esperance: {
     title: "Marine Surveyor Esperance | Inspection Services PMS",
     description:
       "Marine surveyor services in Esperance covering vessel safety, pre-purchase, cargo and bunker work, and technical inspections for southern WA operators.",
     path: "/accredited-amsa-marine-surveyor-in-esperance/",
-    image: "/images/services/marine-safety-inspection.webp",
-    imageAlt:
-      "Inspector checking fire hoses and safety equipment in a commercial vessel corridor",
+    image: photos.enclosedLifeboat.src,
+    imageAlt: photos.enclosedLifeboat.alt,
   },
   karratha: {
     title: "Marine Surveyor Karratha | Pilbara Inspection | PMS",
     description:
       "Marine surveyor services in Karratha covering vessel inspections, DCV preparation, technical consultancy and support for operators across the Pilbara.",
     path: "/accredited-amsa-maritime-surveyor-in-karratha/",
-    image: "/images/services/safety-vetting-inspection.webp",
-    imageAlt:
-      "Surveyor assessing safety equipment on a tanker deck during a vetting inspection",
+    image: photos.rescueBoat.src,
+    imageAlt: photos.rescueBoat.alt,
   },
   geraldton: {
     title: "Marine Surveyor Geraldton | Mid West Inspection PMS",
     description:
       "Marine surveyor services in Geraldton covering vessel safety, cargo and bunker work, technical inspections and DCV preparation for Mid West WA operators.",
     path: "/accredited-amsa-maritime-surveyor-in-geraldton/",
-    image: "/images/services/pre-purchase-inspection.webp",
-    imageAlt:
-      "Surveyor inspecting the deck and fittings of a vessel before purchase",
+    image: photos.cargoLoading.src,
+    imageAlt: photos.cargoLoading.alt,
   },
   pilbara: {
     title: "Marine Surveyor Pilbara | Regional Inspection | PMS",
     description:
       "Marine surveyor work across the Pilbara, including Karratha, Dampier and Port Hedland, with safety, cargo, bunker and technical support for operators.",
     path: "/accredited-amsa-maritime-surveyor-in-pilbara/",
-    image: "/images/services/class-related-consultant.webp",
-    imageAlt:
-      "Marine engineer inspecting machinery in a commercial ship engine room",
+    image: photos.tankerDeckPersonnel.src,
+    imageAlt: photos.tankerDeckPersonnel.alt,
   },
 } satisfies Record<string, PageSeoInput>;
 

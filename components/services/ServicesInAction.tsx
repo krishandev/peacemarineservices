@@ -1,30 +1,13 @@
 import Image from "next/image";
+import { photos } from "@/data/site-images";
 
 const images = [
-  {
-    src: "/images/services/pre-psc-inspection.webp",
-    alt: "Marine vessel inspection at a commercial Australian port berth",
-  },
-  {
-    src: "/images/services/marine-safety-inspection.webp",
-    alt: "Marine safety inspection of vessel fire and safety equipment",
-  },
-  {
-    src: "/images/services/pre-purchase-inspection.webp",
-    alt: "On-site marine inspection of vessel deck condition and fittings",
-  },
-  {
-    src: "/images/services/flag-state-inspection.webp",
-    alt: "Marine inspector reviewing vessel documentation during an inspection",
-  },
-  {
-    src: "/images/services/pre-amsa-inspection.webp",
-    alt: "Marine surveyor conducting a vessel compliance checklist on deck",
-  },
-  {
-    src: "/images/services/safety-vetting-inspection.webp",
-    alt: "Marine safety and vetting inspection of equipment on a tanker deck",
-  },
+  photos.heroHarbour,
+  photos.rescueBoat,
+  photos.bulkHatches,
+  photos.vesselAlongside,
+  photos.bridgeConsole,
+  photos.tankerDeckPersonnel,
 ] as const;
 
 export default function ServicesInAction() {
@@ -54,7 +37,7 @@ export default function ServicesInAction() {
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
+                  className={item.className}
                 />
               </div>
             </li>
