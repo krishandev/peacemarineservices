@@ -13,6 +13,7 @@ import BunkerRelated from "@/components/bunker-surveyor/BunkerRelated";
 import BunkerWhat from "@/components/bunker-surveyor/BunkerWhat";
 import BunkerWho from "@/components/bunker-surveyor/BunkerWho";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -52,6 +53,10 @@ export default function BunkerSurveyorPage() {
       <BunkerCompare />
       <BunkerClaims />
       <BunkerLocations />
+      <RelatedGuidesStrip
+        title="Inspection preparation"
+        slugs={["marine-inspection-preparation-checklist"]}
+      />
       <BunkerRelated />
       <BunkerFaq />
       <CTA

@@ -25,7 +25,7 @@ export default function LocationGrid({
   const grid = (
     <ul className={gridClassName}>
       {locations.map((location) => (
-        <li key={location.href} className="h-full">
+        <li key={location.href ?? location.name} className="h-full">
           <article className="flex h-full flex-col overflow-hidden rounded-sm border border-pms-line bg-white shadow-[0_1px_2px_rgba(7,26,50,0.05)] transition-[border-color,box-shadow] duration-150 hover:border-pms-blue/45 hover:shadow-[0_8px_20px_rgba(7,26,50,0.07)]">
             {showImages && location.image ? (
               <div className="relative aspect-[16/10] bg-pms-wash">
@@ -61,18 +61,20 @@ export default function LocationGrid({
                 </div>
               </div>
 
-              <Link
-                href={location.href}
-                aria-label={
-                  linkLabel === "View Marine Services"
-                    ? `Marine Surveyor Services in ${location.name}`
-                    : `${linkLabel} in ${location.name}`
-                }
-                className="mt-auto inline-flex min-h-11 w-fit items-center gap-1.5 pt-5 rounded-sm text-sm font-semibold text-pms-blue transition-colors duration-150 hover:text-pms-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
-              >
-                {linkLabel}
-                <ArrowIcon className="h-3.5 w-3.5" />
-              </Link>
+              {location.href ? (
+                <Link
+                  href={location.href}
+                  aria-label={
+                    linkLabel === "View Marine Services"
+                      ? `Marine Surveyor Services in ${location.name}`
+                      : `${linkLabel} in ${location.name}`
+                  }
+                  className="mt-auto inline-flex min-h-11 w-fit items-center gap-1.5 pt-5 rounded-sm text-sm font-semibold text-pms-blue transition-colors duration-150 hover:text-pms-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
+                >
+                  {linkLabel}
+                  <ArrowIcon className="h-3.5 w-3.5" />
+                </Link>
+              ) : null}
             </div>
           </article>
         </li>

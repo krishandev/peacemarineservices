@@ -9,15 +9,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = Object.values(pageSeo).map(
     (page) => ({
       url: page.path === "/" ? `${SITE_URL}/` : `${SITE_URL}${page.path}`,
-      lastModified: new Date("2026-10-03"),
+      lastModified: page.path.startsWith("/guides")
+        ? new Date("2026-10-17")
+        : new Date("2026-10-03"),
       changeFrequency:
-        page.path === "/" || page.path === "/blog/" ? "weekly" : "monthly",
+        page.path === "/" || page.path === "/blog/" || page.path === "/guides/"
+          ? "weekly"
+          : "monthly",
       priority:
         page.path === "/"
           ? 1
           : page.path === "/privacy-policy/"
             ? 0.3
-            : page.path === "/blog/"
+            : page.path === "/blog/" || page.path === "/guides/"
               ? 0.8
               : 0.7,
     }),

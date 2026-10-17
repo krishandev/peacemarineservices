@@ -11,6 +11,7 @@ import MarineSafetyReporting from "@/components/marine-safety/MarineSafetyReport
 import MarineSafetyScope from "@/components/marine-safety/MarineSafetyScope";
 import MarineSafetyWhy from "@/components/marine-safety/MarineSafetyWhy";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -47,6 +48,13 @@ export default function MarineSafetyInspectionPage() {
       <MarineSafetyReporting />
       <MarineSafetyGallery />
       <MarineSafetyLocations />
+      <RelatedGuidesStrip
+        title="Inspection preparation guides"
+        slugs={[
+          "marine-inspection-preparation-checklist",
+          "pre-psc-inspection-checklist",
+        ]}
+      />
       <MarineSafetyRelated />
       <MarineSafetyFaq />
       <CTA

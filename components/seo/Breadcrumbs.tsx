@@ -33,6 +33,7 @@ export interface BreadcrumbsProps {
       datePublished: string;
       dateModified?: string;
       authorName?: string;
+      schemaType?: "BlogPosting" | "Article";
     };
     itemList?: {
       name: string;

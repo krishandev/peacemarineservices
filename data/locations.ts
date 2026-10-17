@@ -2,11 +2,32 @@ import { photos } from "@/data/site-images";
 
 export interface Location {
   name: string;
-  href: string;
+  href?: string;
   description?: string;
   image?: string;
   imageAlt?: string;
 }
+
+export type CoverageRegion = {
+  region: string;
+  ports: readonly string[];
+};
+
+export const nationalCoverageRegions: CoverageRegion[] = [
+  { region: "New South Wales", ports: ["Newcastle", "Sydney"] },
+  {
+    region: "Queensland",
+    ports: ["Brisbane", "Gladstone", "Mackay", "Cairns", "Weipa"],
+  },
+  { region: "Victoria", ports: ["Melbourne"] },
+  { region: "South Australia", ports: ["Adelaide"] },
+  { region: "Northern Territory", ports: ["Darwin"] },
+  { region: "Tasmania", ports: ["Tasmania"] },
+];
+
+export const nationalCoveragePorts = nationalCoverageRegions.flatMap(
+  (group) => group.ports,
+);
 
 export const locations: Location[] = [
   {
@@ -99,7 +120,7 @@ export const locations: Location[] = [
   },
   {
     name: "Western Australia",
-    href: "/service-areas/western-australia/",
+    href: "/service-areas/",
     description:
       "Statewide marine surveying, inspection, auditing and consultancy support across Western Australia.",
     image: photos.bridgeEcdis.src,
@@ -107,17 +128,18 @@ export const locations: Location[] = [
   },
 ];
 
-export const serviceAreas = locations.map((location) => ({
-  href: location.href,
-  label: location.name,
-}));
+export const serviceAreas = locations
+  .filter((location): location is Location & { href: string } =>
+    Boolean(location.href),
+  )
+  .map((location) => ({
+    href: location.href,
+    label: location.name,
+  }));
 
 export const serviceCoverage = [
-  "Kwinana",
-  "Fremantle Port",
-  "Bunbury Port",
-  "Albany Port",
-  "Esperance Port",
-  "Geraldton Port",
-  "Western Australia",
-] as const;
+  ...locations
+    .filter((location) => location.name !== "Western Australia")
+    .map((location) => location.name),
+  ...nationalCoveragePorts,
+];

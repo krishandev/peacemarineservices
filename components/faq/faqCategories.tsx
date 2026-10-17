@@ -118,7 +118,11 @@ export const faqHubCategories: FAQHubCategory[] = [
             </p>
             <p>
               Those details allow the inspection scope to be discussed before
-              attendance. You can send them through the{" "}
+              attendance. A longer document and access list is in the{" "}
+              <InlineLink href="/guides/marine-inspection-preparation-checklist/">
+                marine inspection preparation checklist
+              </InlineLink>
+              . You can send an enquiry through the{" "}
               <InlineLink href="/contact/">contact form</InlineLink>.
             </p>
           </>
@@ -255,7 +259,11 @@ export const faqHubCategories: FAQHubCategory[] = [
             <p>
               Whether a vessel is a DCV depends on how it is used and the
               applicable requirements. Official classification of a vessel
-              remains a matter for the relevant competent authority.
+              remains a matter for the relevant competent authority. See the{" "}
+              <InlineLink href="/guides/australian-dcv-survey-requirements/">
+                Australian DCV survey requirements guide
+              </InlineLink>{" "}
+              for a practical overview with official AMSA links.
             </p>
           </>
         ),
@@ -429,6 +437,10 @@ export const faqHubCategories: FAQHubCategory[] = [
               the time of inspection. See{" "}
               <InlineLink href="/pre-purchase-inspection/">
                 pre-purchase marine inspection
+              </InlineLink>{" "}
+              and the{" "}
+              <InlineLink href="/guides/pre-purchase-vessel-inspection-checklist/">
+                pre-purchase vessel inspection checklist
               </InlineLink>
               .
             </p>
@@ -737,7 +749,11 @@ export const faqHubCategories: FAQHubCategory[] = [
             </p>
             <p>
               Official PSC inspections and decisions remain with the relevant
-              authority. PMS is not a Port State Control authority.
+              authority. PMS is not a Port State Control authority. The{" "}
+              <InlineLink href="/guides/pre-psc-inspection-checklist/">
+                Pre-PSC inspection checklist for Australian ports
+              </InlineLink>{" "}
+              covers preparation steps and limitations.
             </p>
           </>
         ),
@@ -829,6 +845,10 @@ export const faqHubCategories: FAQHubCategory[] = [
               See{" "}
               <InlineLink href="/internal-audits-for-ism-isps-and-mlc/">
                 internal audits for ISM, ISPS and MLC
+              </InlineLink>{" "}
+              and the{" "}
+              <InlineLink href="/guides/ism-isps-mlc-audit-preparation/">
+                ISM, ISPS and MLC audit preparation guide
               </InlineLink>
               .
             </p>

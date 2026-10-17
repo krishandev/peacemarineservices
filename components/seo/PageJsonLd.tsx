@@ -28,6 +28,7 @@ export type PageJsonLdProps = {
     datePublished: string;
     dateModified?: string;
     authorName?: string;
+    schemaType?: "BlogPosting" | "Article";
   };
   itemList?: {
     name: string;

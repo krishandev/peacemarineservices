@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import BlogGrid from "@/components/blog/BlogGrid";
 import BlogPagination from "@/components/blog/BlogPagination";
 import CTA from "@/components/common/CTA";
@@ -84,7 +85,14 @@ export default async function BlogPage({
             marine inspections, vessel safety, AMSA and DCV preparation, marine
             compliance, cargo surveys, bunker surveys, technical marine
             inspection, marine audits, maritime operations, and vessel ownership
-            and inspection considerations.
+            and inspection considerations. Longer checklists are in the{" "}
+            <Link
+              href="/guides/"
+              className="font-semibold text-pms-blue underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
+            >
+              Guides &amp; Resources
+            </Link>{" "}
+            section.
           </p>
         </div>
       </section>

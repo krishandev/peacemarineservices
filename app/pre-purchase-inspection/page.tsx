@@ -10,6 +10,7 @@ import PrePurchaseRelated from "@/components/pre-purchase/PrePurchaseRelated";
 import PrePurchaseWhat from "@/components/pre-purchase/PrePurchaseWhat";
 import PrePurchaseWho from "@/components/pre-purchase/PrePurchaseWho";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -46,6 +47,13 @@ export default function PrePurchaseInspectionPage() {
       <PrePurchaseCompare />
       <PrePurchasePrepare />
       <PrePurchaseLocations />
+      <RelatedGuidesStrip
+        title="Buyer and inspection guides"
+        slugs={[
+          "pre-purchase-vessel-inspection-checklist",
+          "marine-inspection-preparation-checklist",
+        ]}
+      />
       <PrePurchaseRelated />
       <PrePurchaseFaq />
       <CTA

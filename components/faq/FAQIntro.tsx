@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FAQIntro() {
   return (
     <section
@@ -18,7 +20,15 @@ export default function FAQIntro() {
           Find answers to common questions about PMS Peace Marine Services,
           marine surveying, vessel inspections, AMSA/DCV preparation, marine
           compliance support, technical inspections, audits, cargo surveys,
-          bunker surveys and our service areas across Western Australia.
+          bunker surveys and our service areas across Western Australia. For
+          longer checklists, see{" "}
+          <Link
+            href="/guides/"
+            className="font-semibold text-white underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          >
+            marine guides and resources
+          </Link>
+          .
         </p>
       </div>
     </section>

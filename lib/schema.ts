@@ -264,6 +264,7 @@ export function getBlogPostingSchema({
   datePublished,
   dateModified,
   authorName,
+  schemaType = "BlogPosting",
 }: {
   path: string;
   headline: string;
@@ -272,6 +273,7 @@ export function getBlogPostingSchema({
   datePublished: string;
   dateModified?: string;
   authorName?: string;
+  schemaType?: "BlogPosting" | "Article";
 }) {
   const url = absoluteUrl(path);
   const imageUrl = image
@@ -281,7 +283,7 @@ export function getBlogPostingSchema({
     : undefined;
 
   return {
-    "@type": "BlogPosting",
+    "@type": schemaType,
     "@id": `${url}#article`,
     headline,
     description,
@@ -370,6 +372,7 @@ export function getPageSchemaGraph({
     datePublished: string;
     dateModified?: string;
     authorName?: string;
+    schemaType?: "BlogPosting" | "Article";
   };
   itemList?: {
     name: string;

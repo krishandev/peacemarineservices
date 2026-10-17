@@ -1,3 +1,4 @@
+import CoverageRegions from "@/components/locations/CoverageRegions";
 import LocationGrid from "@/components/locations/LocationGrid";
 
 export default function ServiceAreasGridSection() {
@@ -14,12 +15,15 @@ export default function ServiceAreasGridSection() {
           Our Marine Service Areas
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-pms-muted sm:text-[15px]">
-          Explore the key ports and marine locations where PMS Peace Marine
-          Services provides marine surveying, inspection and related support.
+          Explore the key Western Australian ports and marine locations where
+          PMS Peace Marine Services provides marine surveying, inspection and
+          related support. Assignments can also be discussed for other
+          Australian ports where the work can be supported.
         </p>
         <div className="mt-8">
           <LocationGrid showImages linkLabel="View Service Area" />
         </div>
+        <CoverageRegions className="mt-10 border-t border-pms-line pt-10" />
       </div>
     </section>
   );

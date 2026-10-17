@@ -23,6 +23,7 @@ export const mainNav = [
   { href: "/our-services/", label: "Our Services", id: "services" as const },
   { href: "/service-areas/", label: "Service Areas", id: "areas" as const },
   { href: "/blog/", label: "Blog" },
+  { href: "/guides/", label: "Guides" },
   { href: "/faq/", label: "FAQ" },
   { href: "/contact/", label: "Contact" },
 ] as const;

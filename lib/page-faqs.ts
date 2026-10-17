@@ -28,6 +28,7 @@ import {
   technicalInspectionFaqs,
   type FAQItem,
 } from "@/data/faqs";
+import { getGuideFaqsByPath } from "@/data/guides";
 import { normalizeFaqText, reactNodeToPlainText } from "@/lib/faq-text";
 
 function hubFaqs(): FAQItem[] {
@@ -68,6 +69,7 @@ const faqsByPath: Record<string, FAQItem[]> = {
   "/accredited-amsa-maritime-surveyor-in-karratha/": karrathaLocationFaqs,
   "/accredited-amsa-maritime-surveyor-in-geraldton/": geraldtonLocationFaqs,
   "/accredited-amsa-maritime-surveyor-in-pilbara/": pilbaraLocationFaqs,
+  ...getGuideFaqsByPath(),
 };
 
 export function getFaqsForPath(path: string): FAQItem[] | undefined {

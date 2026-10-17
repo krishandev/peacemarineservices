@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { nationalCoverageRegions } from "@/data/locations";
 import {
   PHONE_DISPLAY,
   PHONE_HREF,
@@ -210,6 +211,24 @@ export default function MobileNavigation({
                             </Link>
                           </li>
                         ))}
+                        <li className="px-3 pt-2 pb-1">
+                          <p className="text-[11px] font-semibold tracking-[0.12em] text-pms-navy uppercase">
+                            Other Australian ports
+                          </p>
+                          <ul className="mt-2 space-y-1">
+                            {nationalCoverageRegions.map((group) => (
+                              <li
+                                key={group.region}
+                                className="text-[13px] leading-5 text-pms-muted"
+                              >
+                                <span className="font-medium text-pms-ink">
+                                  {group.region}:
+                                </span>{" "}
+                                {group.ports.join(", ")}
+                              </li>
+                            ))}
+                          </ul>
+                        </li>
                       </ul>
                     </li>
                   );

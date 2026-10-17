@@ -16,9 +16,10 @@ export default function ServiceAreasIntro() {
         <p className="mt-4 max-w-3xl text-sm leading-6 text-pms-muted sm:text-[15px]">
           PMS Peace Marine Services provides marine surveying, inspection,
           auditing and technical marine support for vessel owners, operators
-          and maritime stakeholders across Western Australia. Work is arranged
-          around the vessel, the port or marine area, and the inspection
-          requirement.
+          and maritime stakeholders across Western Australia, with coverage
+          that can also be discussed for other Australian ports. Work is
+          arranged around the vessel, the port or marine area, and the
+          inspection requirement.
         </p>
         <p className="mt-4 max-w-3xl text-sm leading-6 text-pms-muted sm:text-[15px]">
           Depending on the assignment,{" "}
@@ -37,7 +38,15 @@ export default function ServiceAreasIntro() {
         <p className="mt-4 max-w-3xl text-sm leading-6 text-pms-muted sm:text-[15px]">
           A listed service area means PMS can discuss inspection and survey
           support for that location. It does not mean PMS has a branch or
-          permanent office there.
+          permanent office there. For inspection and survey preparation notes,
+          see the{" "}
+          <Link
+            href="/guides/"
+            className="font-semibold text-pms-blue underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pms-blue"
+          >
+            marine guides and resources
+          </Link>
+          .
         </p>
       </div>
     </section>

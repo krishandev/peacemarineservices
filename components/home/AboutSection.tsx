@@ -42,7 +42,8 @@ export default function AboutSection() {
           <p className="mt-4 text-sm leading-6 text-pms-muted sm:text-[15px]">
             Services are available across Western Australia, including Perth,
             Fremantle, Kwinana, Bunbury, Albany, Esperance, Geraldton, Port
-            Hedland, Dampier, Karratha and the Pilbara. Coverage for a specific
+            Hedland, Dampier, Karratha and the Pilbara, and enquiries can also
+            be discussed for other Australian ports. Coverage for a specific
             job depends on the vessel, timing and inspection requirement. PMS
             does not operate a physical office in every listed location.
           </p>

@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "standalone",
+  poweredByHeader: false,
   trailingSlash: true,
   async redirects() {
     return [
@@ -76,6 +78,11 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "peacemarineservices.com.au",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.peacemarineservices.com.au",
         pathname: "/wp-content/uploads/**",
       },
     ],

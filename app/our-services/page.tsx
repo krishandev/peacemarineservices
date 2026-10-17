@@ -9,6 +9,7 @@ import ServicesIntro from "@/components/services/ServicesIntro";
 import ServicesLocations from "@/components/services/ServicesLocations";
 import ServicesSupport from "@/components/services/ServicesSupport";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -45,6 +46,16 @@ export default function OurServicesPage() {
       <ServicesApproach />
       <ServicesInAction />
       <ServicesLocations />
+      <RelatedGuidesStrip
+        title="Helpful inspection and survey guides"
+        showHubLink
+        slugs={[
+          "pre-psc-inspection-checklist",
+          "australian-dcv-survey-requirements",
+          "pre-purchase-vessel-inspection-checklist",
+          "ism-isps-mlc-audit-preparation",
+        ]}
+      />
       <ServicesFaqSection />
       <CTA
         eyebrow="Marine Surveying & Inspection Support"

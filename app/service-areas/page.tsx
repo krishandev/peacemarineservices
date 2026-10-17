@@ -31,8 +31,11 @@ export default function ServiceAreasPage() {
                 name: "PMS marine surveyor service areas",
                 items: locations
                   .filter(
-                    (location) =>
-                      location.href !== "/service-areas/western-australia/",
+                    (
+                      location,
+                    ): location is (typeof locations)[number] & { href: string } =>
+                      Boolean(location.href) &&
+                      location.name !== "Western Australia",
                   )
                   .map((location) => ({
                     name: location.name,

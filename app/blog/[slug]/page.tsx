@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPost from "@/components/blog/BlogPost";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import { relatedGuideSlugsForText } from "@/data/guides";
 import { fitSeoDescription, fitSeoTitle } from "@/lib/blog-seo";
 import { createPageMetadata } from "@/lib/seo";
 import {
@@ -87,6 +89,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </div>
       <BlogPost post={post} relatedPosts={relatedPosts} />
+      <RelatedGuidesStrip
+        title="Related guides"
+        slugs={relatedGuideSlugsForText(
+          `${post.title} ${post.slug} ${post.excerpt}`,
+        )}
+      />
       <CTA
         eyebrow="Marine Surveying & Inspection"
         title="Need Marine Inspection or Survey Support?"

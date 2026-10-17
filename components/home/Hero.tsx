@@ -10,7 +10,7 @@ const trustHighlights = [
   "Marine Surveys",
   "Vessel Inspections",
   "Auditing & Compliance",
-  "Western Australia",
+  "Australia",
 ] as const;
 
 export default function Hero() {

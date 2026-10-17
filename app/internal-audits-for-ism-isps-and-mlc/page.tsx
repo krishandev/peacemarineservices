@@ -11,6 +11,7 @@ import InternalAuditsTypes from "@/components/internal-audits/InternalAuditsType
 import InternalAuditsWho from "@/components/internal-audits/InternalAuditsWho";
 import InternalAuditsWhy from "@/components/internal-audits/InternalAuditsWhy";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -47,6 +48,13 @@ export default function InternalAuditsPage() {
       <InternalAuditsWho />
       <InternalAuditsGallery />
       <InternalAuditsLocations />
+      <RelatedGuidesStrip
+        title="Audit and PSC preparation guides"
+        slugs={[
+          "ism-isps-mlc-audit-preparation",
+          "pre-psc-inspection-checklist",
+        ]}
+      />
       <InternalAuditsRelated />
       <InternalAuditsFaq />
       <CTA

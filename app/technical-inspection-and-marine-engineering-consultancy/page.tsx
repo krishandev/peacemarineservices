@@ -13,6 +13,7 @@ import TechRelated from "@/components/technical-inspection/TechRelated";
 import TechWhat from "@/components/technical-inspection/TechWhat";
 import TechWho from "@/components/technical-inspection/TechWho";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -55,6 +56,10 @@ export default function TechnicalInspectionPage() {
       <TechCompare />
       <TechLimits />
       <TechLocations />
+      <RelatedGuidesStrip
+        title="Inspection preparation"
+        slugs={["marine-inspection-preparation-checklist"]}
+      />
       <TechRelated />
       <TechFaq />
       <CTA

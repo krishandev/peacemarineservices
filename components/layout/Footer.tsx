@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { footerGuideLinks } from "@/data/guides";
 import { serviceAreas, serviceCoverage } from "@/data/locations";
 import { services } from "@/data/services";
 
@@ -77,8 +78,9 @@ export default function Footer() {
               </Link>
               <p className="mt-4 max-w-md text-sm leading-6 text-white/75">
                 PMS Peace Marine Services provides marine surveying, inspection,
-                auditing and marine consultancy services across Western
-                Australia and other Australian locations.
+                auditing and marine consultancy services across Australia, with
+                established Western Australian port coverage and support that can
+                also be discussed for other Australian ports.
               </p>
               <ul className="mt-5 flex flex-wrap items-center gap-2">
                 {socialLinks.map((item) => (
@@ -160,6 +162,32 @@ export default function Footer() {
               </ul>
             </nav>
           </div>
+
+          <nav
+            aria-labelledby="footer-guides-heading"
+            className="border-t border-white/10 py-8"
+          >
+            <h2
+              id="footer-guides-heading"
+              className="text-[11px] font-semibold tracking-[0.14em] text-white uppercase"
+            >
+              <Link
+                href="/guides/"
+                className="rounded-sm text-white transition-colors duration-150 hover:text-pms-cyan focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Guides &amp; Resources
+              </Link>
+            </h2>
+            <ul className="mt-4 flex flex-col gap-x-8 sm:flex-row sm:flex-wrap">
+              {footerGuideLinks.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className={linkClassName}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
           <section
             aria-labelledby="footer-contact-heading"

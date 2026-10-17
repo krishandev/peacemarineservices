@@ -11,6 +11,7 @@ import AmsaDcvScope from "@/components/amsa-dcv/AmsaDcvScope";
 import AmsaDcvSupport from "@/components/amsa-dcv/AmsaDcvSupport";
 import AmsaDcvVessels from "@/components/amsa-dcv/AmsaDcvVessels";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -47,6 +48,13 @@ export default function AmsaDcvMarineSurveyorPage() {
       <AmsaDcvRequirements />
       <AmsaDcvGallery />
       <AmsaDcvLocations />
+      <RelatedGuidesStrip
+        title="DCV and inspection guides"
+        slugs={[
+          "australian-dcv-survey-requirements",
+          "marine-inspection-preparation-checklist",
+        ]}
+      />
       <AmsaDcvRelated />
       <AmsaDcvFaq />
       <CTA

@@ -238,6 +238,52 @@ export const pageSeo = {
     image: photos.tankerDeckPersonnel.src,
     imageAlt: photos.tankerDeckPersonnel.alt,
   },
+  guides: {
+    title: "Marine Guides & Resources | Vessel Operators | PMS",
+    description:
+      "Practical guides for shipowners and operators covering PSC preparation, DCV survey, pre-purchase inspections and ISM, ISPS and MLC audit readiness onboard.",
+    path: "/guides/",
+  },
+  guidePrePsc: {
+    title: "Pre-PSC Inspection Checklist | Australian Ports | PMS",
+    description:
+      "A Port State Control preparation checklist for Australian ports covering certificates, safety equipment, records, defects and pre-inspection support plan.",
+    path: "/guides/pre-psc-inspection-checklist/",
+    image: photos.heroHarbour.src,
+    imageAlt: photos.heroHarbour.alt,
+  },
+  guideDcv: {
+    title: "Australian DCV Survey Requirements | Practical Guide",
+    description:
+      "Australian DCV survey guidance covering certificates, SMS, Unique Vessel Identifiers, exemptions and how owners prepare for an upcoming periodic survey.",
+    path: "/guides/australian-dcv-survey-requirements/",
+    image: stockPhotos.dcvWorkboat.src,
+    imageAlt: stockPhotos.dcvWorkboat.alt,
+  },
+  guidePrePurchase: {
+    title: "Pre-Purchase Vessel Inspection Checklist for Buyers",
+    description:
+      "Pre-purchase vessel inspection checklist covering scope, hull, machinery, documents, seller questions, reports and visual-survey limitations for buyers.",
+    path: "/guides/pre-purchase-vessel-inspection-checklist/",
+    image: photos.vesselAlongside.src,
+    imageAlt: photos.vesselAlongside.alt,
+  },
+  guideInspection: {
+    title: "Marine Inspection Preparation Checklist | Crew | PMS",
+    description:
+      "Marine inspection preparation checklist covering agreed scope, documents, safe access, records, known defects, attendance and follow-up after reporting.",
+    path: "/guides/marine-inspection-preparation-checklist/",
+    image: photos.tankerDeckPersonnel.src,
+    imageAlt: photos.tankerDeckPersonnel.alt,
+  },
+  guideIsm: {
+    title: "ISM, ISPS and MLC Audit Preparation Guide Australia",
+    description:
+      "ISM, ISPS and MLC internal-audit preparation covering records, previous findings, corrective actions and independent consultancy support in Australia.",
+    path: "/guides/ism-isps-mlc-audit-preparation/",
+    image: photos.bridgeGmdss.src,
+    imageAlt: photos.bridgeGmdss.alt,
+  },
 } satisfies Record<string, PageSeoInput>;
 
 const titles = new Set<string>();

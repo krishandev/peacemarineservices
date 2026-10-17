@@ -11,6 +11,7 @@ import PreAmsaRelated from "@/components/pre-amsa/PreAmsaRelated";
 import PreAmsaWhat from "@/components/pre-amsa/PreAmsaWhat";
 import PreAmsaWho from "@/components/pre-amsa/PreAmsaWho";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -48,6 +49,13 @@ export default function PreAmsaInspectionPage() {
       <PreAmsaWho />
       <PreAmsaDocs />
       <PreAmsaLocations />
+      <RelatedGuidesStrip
+        title="DCV and inspection guides"
+        slugs={[
+          "australian-dcv-survey-requirements",
+          "marine-inspection-preparation-checklist",
+        ]}
+      />
       <PreAmsaRelated />
       <PreAmsaFaq />
       <CTA

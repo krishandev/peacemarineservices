@@ -1,3 +1,4 @@
+import { nationalCoverageRegions } from "@/data/locations";
 import {
   serviceAreasColumnOne,
   serviceAreasColumnTwo,
@@ -12,7 +13,7 @@ export default function ServiceAreasMenu({ id, open }: ServiceAreasMenuProps) {
   return (
     <div
       id={id}
-      className={`absolute top-full left-0 z-50 w-[min(22rem,calc(100vw-2rem))] pt-2 transition-opacity duration-150 ${
+      className={`absolute top-full left-0 z-50 w-[min(28rem,calc(100vw-2rem))] pt-2 transition-opacity duration-150 ${
         open
           ? "visible opacity-100"
           : "invisible pointer-events-none opacity-0"
@@ -45,6 +46,19 @@ export default function ServiceAreasMenu({ id, open }: ServiceAreasMenuProps) {
                 >
                   {item.label}
                 </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="border-t border-pms-line px-4 py-3">
+          <p className="text-[11px] font-semibold tracking-[0.12em] text-pms-navy uppercase">
+            Other Australian ports
+          </p>
+          <ul className="mt-2 space-y-1">
+            {nationalCoverageRegions.map((group) => (
+              <li key={group.region} className="text-[12px] leading-5 text-pms-muted">
+                <span className="font-medium text-pms-ink">{group.region}:</span>{" "}
+                {group.ports.join(", ")}
               </li>
             ))}
           </ul>

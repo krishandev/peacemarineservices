@@ -14,6 +14,7 @@ import PrePscRelated from "@/components/pre-psc/PrePscRelated";
 import PrePscWhat from "@/components/pre-psc/PrePscWhat";
 import PrePscWho from "@/components/pre-psc/PrePscWho";
 import CTA from "@/components/common/CTA";
+import RelatedGuidesStrip from "@/components/guides/RelatedGuidesStrip";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 
@@ -54,6 +55,13 @@ export default function PrePscInspectionPage() {
       <PrePscCompare />
       <PrePscAfter />
       <PrePscLocations />
+      <RelatedGuidesStrip
+        title="Preparation guides"
+        slugs={[
+          "pre-psc-inspection-checklist",
+          "marine-inspection-preparation-checklist",
+        ]}
+      />
       <PrePscRelated />
       <PrePscFaq />
       <CTA

@@ -4,6 +4,7 @@ import PageJsonLd from "@/components/seo/PageJsonLd";
 import AboutSection from "@/components/home/AboutSection";
 import CredentialsSection from "@/components/home/CredentialsSection";
 import FAQSection from "@/components/home/FAQSection";
+import GuidesSection from "@/components/home/GuidesSection";
 import Hero from "@/components/home/Hero";
 import MarineWorkSection from "@/components/home/MarineWorkSection";
 import ProcessSection from "@/components/home/ProcessSection";
@@ -34,6 +35,7 @@ export default function Home() {
       <CredentialsSection />
       <ProcessSection />
       <MarineWorkSection />
+      <GuidesSection />
       <FAQSection />
       <CTA
         eyebrow="Marine Surveying & Inspection Support"
